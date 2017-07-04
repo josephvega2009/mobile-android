@@ -74,6 +74,7 @@ MERGED from [com.android.support:support-media-compat:25.3.1] C:\Users\romer\.an
 MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\romer\.android\build-cache\b6246aeb0c33506883d5a32832fbb03bca31c838\output\AndroidManifest.xml:21:5-23:58
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\romer\.android\build-cache\772ec52c52f0544a3a6298ef7cadd81b6d699251\output\AndroidManifest.xml:21:5-23:61
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\romer\.android\build-cache\583053027937f07bcdd4108385af10fd3f6a8bcd\output\AndroidManifest.xml:21:5-23:58
+MERGED from [com.github.satyan:sugar:1.5] C:\Users\romer\.android\build-cache\ac384fdaa834a3285cd592c955edd8e613c3f39a\output\AndroidManifest.xml:7:5-9:41
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\romer\.android\build-cache\117da7eb90c668fb997e877485d49c20cbfbd67c\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
