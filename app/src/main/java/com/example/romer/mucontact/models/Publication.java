@@ -2,6 +2,7 @@ package com.example.romer.mucontact.models;
 
 import com.orm.SugarRecord;
 
+import java.text.SimpleDateFormat;
 import java.util.Date;
 
 /**
@@ -60,9 +61,20 @@ public class Publication extends SugarRecord {
         return createdAt;
     }
 
+    public String getCreatedAtAsString() {
+        return (new SimpleDateFormat("EEEE MMMM, d yyyy"))
+                .format(getCreatedAt());
+    }
+
     public Publication setCreatedAt(Date createdAt) {
         this.createdAt = createdAt;
         return this;
+    }
+
+    public String getContext() {
+        return "On " + getCreatedAtAsString() +
+                (locationReference.isEmpty() ? "" :
+                        " at " + locationReference);
     }
 
     public String getCraftmen() {

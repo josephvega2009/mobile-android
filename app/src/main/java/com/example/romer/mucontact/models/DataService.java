@@ -1,8 +1,5 @@
 package com.example.romer.mucontact.models;
 
-import android.os.Build;
-
-import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -20,6 +17,9 @@ public class DataService {
         if(Publication.listAll(Publication.class).isEmpty() ) {
             (new Publication("Guitarra", "Mantenimiento", "Lima", new Date(), "Renzo Romero")).save();
             (new Publication("Bajo", "Reparación", "Chorrillos", new Date(), "Leonardo Caycho")).save();
+            (new Publication("Bateria", "Reparación", "San Juan de Lurigancho", new Date(), "Jordan Luna")).save();
+            (new Publication("Guitarra", "Reparación", "Surco", new Date(), "Jhosep Vega")).save();
+            (new Publication("Triangulo", "Pintado", "Miraflores", new Date(), "Will Rojas")).save();
         }
     }
 
