@@ -1,11 +1,11 @@
 [
     {
-        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
-        "source": "C:\\Users\\INTEL\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
+        "merged": "C:\\Users\\romer\\Desktop\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
+        "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
     },
     {
-        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",
-        "source": "C:\\Users\\INTEL\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\anim-v21\\design_bottom_sheet_slide_in.xml"
+        "merged": "C:\\Users\\romer\\Desktop\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_out.xml",
+        "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\anim-v21\\design_bottom_sheet_slide_out.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\anim-v21\\design_bottom_sheet_slide_in.xml",

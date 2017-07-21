@@ -1,5 +1,7 @@
 package com.example.romer.mucontact.models;
 
+import com.orm.SugarRecord;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -8,10 +10,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by INTEL on 16/07/2017.
+ * Created by romer on 20/7/2017.
  */
 
-public class User {
+public class User extends SugarRecord {
     private String _id;
     private String email;
     private String displayName;
@@ -103,6 +105,4 @@ public class User {
 
         return users;
     }
-
-
 }

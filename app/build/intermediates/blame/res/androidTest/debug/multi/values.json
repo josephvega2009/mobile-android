@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\romer\\Desktop\\MuContact\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -24,7 +24,7 @@
         ]
     },
     {
-        "outputFile": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
+        "outputFile": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\incremental\\mergeDebugAndroidTestResources\\merged.dir\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -35,7 +35,7 @@
                     "endOffset": 96
                 },
                 "from": {
-                    "file": "C:\\Users\\INTEL\\.android\\build-cache\\c6326d07d376ae3dbcf82b21259a7b9bd175ee4b\\output\\res\\values\\values.xml",
+                    "file": "C:\\Users\\romer\\.android\\build-cache\\c6326d07d376ae3dbcf82b21259a7b9bd175ee4b\\output\\res\\values\\values.xml",
                     "position": {
                         "startLine": 4,
                         "startColumn": 4,
