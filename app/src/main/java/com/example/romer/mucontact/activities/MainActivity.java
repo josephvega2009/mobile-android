@@ -10,7 +10,7 @@ import android.view.MenuItem;
 import com.example.romer.mucontact.R;
 import com.example.romer.mucontact.fragments.HomeFragment;
 import com.example.romer.mucontact.fragments.PublicationFragment;
-import com.example.romer.mucontact.fragments.SettingsFragment;
+import com.example.romer.mucontact.fragments.UsersFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -33,7 +33,7 @@ public class MainActivity extends AppCompatActivity {
         switch (id) {
             case R.id.navigation_home: return new HomeFragment();
             case R.id.navigation_search: return new PublicationFragment();
-            case R.id.navigation_settings: return new SettingsFragment();
+            case R.id.navigation_settings: return new UsersFragment();
         }
         return null;
     }

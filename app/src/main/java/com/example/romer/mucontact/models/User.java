@@ -1,7 +1,5 @@
 package com.example.romer.mucontact.models;
 
-import com.orm.SugarRecord;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -10,23 +8,34 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by romer on 20/7/2017.
+ * Created by INTEL on 16/07/2017.
  */
 
-public class User extends SugarRecord {
+public class User {
+    private String _id;
     private String email;
     private String displayName;
-    private String password;
-    private String typeUser;
+    private String userType;
+    private String signupDate;
 
     public User() {
     }
 
-    public User(String email, String displayName, String password, String typeUser) {
+    public User(String _id, String email, String displayName, String userType, String signupDate) {
+        this._id = _id;
         this.email = email;
         this.displayName = displayName;
-        this.password = password;
-        this.typeUser = typeUser;
+        this.userType = userType;
+        this.signupDate = signupDate;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public User set_id(String _id) {
+        this._id = _id;
+        return this;
     }
 
     public String getEmail() {
@@ -47,21 +56,21 @@ public class User extends SugarRecord {
         return this;
     }
 
-    public String getPassword() {
-        return password;
+    public String getUserType() {
+        return userType;
     }
 
-    public User setPassword(String password) {
-        this.password = password;
+    public User setUserType(String userType) {
+        this.userType = userType;
         return this;
     }
 
-    public String getTypeUser() {
-        return typeUser;
+    public String getSignupDate() {
+        return signupDate;
     }
 
-    public User setTypeUser(String typeUser) {
-        this.typeUser = typeUser;
+    public User setSignupDate(String signupDate) {
+        this.signupDate = signupDate;
         return this;
     }
 
@@ -69,9 +78,11 @@ public class User extends SugarRecord {
         if(jsonUser == null) return null;
         User user = new User();
         try {
-            user.setEmail(jsonUser.getString("email"))
+            user.set_id(jsonUser.getString("_id"))
+                    .setEmail(jsonUser.getString("email"))
                     .setDisplayName(jsonUser.getString("displayName"))
-                    .setTypeUser(jsonUser.getString("typeUser"));
+                    .setUserType(jsonUser.getString("userType"))
+                    .setSignupDate(jsonUser.getString("signupDate"));
             return user;
         } catch (JSONException e) {
             e.printStackTrace();
@@ -89,6 +100,9 @@ public class User extends SugarRecord {
             } catch (JSONException e) {
                 e.printStackTrace();
             }
+
         return users;
     }
+
+
 }

@@ -7,4 +7,5 @@ package com.example.romer.mucontact.network;
 public class NewApiService {
     public static String REWARD_URL = "https://mucontact.herokuapp.com/api/reward";
     public static String PUBLICATION_URL = "https://mucontact.herokuapp.com/api/publication";
+    public static String USERS_URL = "http://mucontact.herokuapp.com/api/user";
 }

@@ -4,6 +4,42 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_settings_black_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_settings_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
+        "source": "C:\\Users\\INTEL\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_collections_black_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_collections_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
+        "source": "C:\\Users\\INTEL\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_notifications_black_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_notifications_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_search_white_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_search_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_edit_white_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_edit_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_dashboard_black_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_dashboard_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     }
