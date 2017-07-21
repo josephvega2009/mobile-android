@@ -8,6 +8,8 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="25" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <meta-data
         android:name="android.support.VERSION"
         android:value="25.3.1" />
@@ -30,6 +32,15 @@
         <activity
             android:name="com.example.romer.mucontact.activities.MainActivity"
             android:label="@string/title_activity_main" />
+        <activity
+            android:name="com.example.romer.mucontact.activities.RewardActivity"
+            android:label="@string/title_activity_reward"
+            android:parentActivityName="com.example.romer.mucontact.activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.romer.mucontact.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

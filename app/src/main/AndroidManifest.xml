@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.romer.mucontact">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".MuContactApp"
         android:allowBackup="true"
@@ -19,7 +21,16 @@
         </activity>
         <activity
             android:name=".activities.MainActivity"
-            android:label="@string/title_activity_main"></activity>
+            android:label="@string/title_activity_main" />
+        <activity
+            android:name=".activities.RewardActivity"
+            android:label="@string/title_activity_reward"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.romer.mucontact.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

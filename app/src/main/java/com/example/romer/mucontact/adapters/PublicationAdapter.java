@@ -17,6 +17,13 @@ import java.util.List;
 
 public class PublicationAdapter extends RecyclerView.Adapter<PublicationAdapter.ViewHolder>{
     private List<Publication> publications;
+
+    public PublicationAdapter() {
+    }
+
+    public PublicationAdapter(List<Publication> publications) {
+        this.publications = publications;
+    }
     @Override
     public PublicationAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater

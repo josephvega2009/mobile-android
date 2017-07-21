@@ -2,8 +2,12 @@ package com.example.romer.mucontact.models;
 
 import com.orm.SugarRecord;
 
-import java.text.SimpleDateFormat;
-import java.util.Date;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by romer on 26/6/2017.
@@ -13,22 +17,21 @@ public class Publication extends SugarRecord {
     private String instrument;
     private String description;
     private String locationReference;
-    private Date createdAt;
+    private String createdAt;
     private String craftmen;
+    private User user;
 
     public Publication() {
-
     }
 
-
-    public Publication(String instrument, String description, String locationReference, Date createdAt, String craftmen) {
-        this.setInstrument(instrument);
-        this.setDescription(description);
-        this.setLocationReference(locationReference);
-        this.setCreatedAt(createdAt);
-        this.setCraftmen(craftmen);
+    public Publication(String instrument, String description, String locationReference, String createdAt, String craftmen, User user) {
+        this.instrument = instrument;
+        this.description = description;
+        this.locationReference = locationReference;
+        this.createdAt = createdAt;
+        this.craftmen = craftmen;
+        this.user = user;
     }
-
 
     public String getInstrument() {
         return instrument;
@@ -57,24 +60,13 @@ public class Publication extends SugarRecord {
         return this;
     }
 
-    public Date getCreatedAt() {
+    public String getCreatedAt() {
         return createdAt;
     }
 
-    public String getCreatedAtAsString() {
-        return (new SimpleDateFormat("EEEE MMMM, d yyyy"))
-                .format(getCreatedAt());
-    }
-
-    public Publication setCreatedAt(Date createdAt) {
+    public Publication setCreatedAt(String createdAt) {
         this.createdAt = createdAt;
         return this;
-    }
-
-    public String getContext() {
-        return "On " + getCreatedAtAsString() +
-                (locationReference.isEmpty() ? "" :
-                        " at " + locationReference);
     }
 
     public String getCraftmen() {
@@ -84,5 +76,48 @@ public class Publication extends SugarRecord {
     public Publication setCraftmen(String craftmen) {
         this.craftmen = craftmen;
         return this;
+    }
+
+    public String getContext() {
+        return "On " + getCreatedAt().substring(0,10) +
+                (getLocationReference().isEmpty() ? "" :
+                        " at " + getLocationReference());
+    }
+
+    public static Publication build(JSONObject jsonPublication, User user) {
+        if(jsonPublication == null) return null;
+        Publication publication = new Publication();
+        try {
+            publication.setInstrument(jsonPublication.getString("instrument"))
+                    .setDescription(jsonPublication.getString("description"))
+                    .setCreatedAt(jsonPublication.getString("date"))
+                    .setLocationReference(jsonPublication.getString("locationAt"))
+                    .setUser(user);
+            return publication;
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
+        return null;
+    }
+
+    public static List<Publication> build(JSONArray jsonPublications, User user) {
+        if(jsonPublications == null) return null;
+        int length = jsonPublications.length();
+        List<Publication> publications = new ArrayList<>();
+        for(int i = 0; i < length; i++)
+            try {
+                publications.add(Publication.build(jsonPublications.getJSONObject(i), user));
+            } catch (JSONException e) {
+                e.printStackTrace();
+            }
+        return publications;
+    }
+
+    public User getUser() {
+        return user;
+    }
+
+    public void setUser(User user) {
+        this.user = user;
     }
 }
