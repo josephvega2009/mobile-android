@@ -29,7 +29,6 @@ public class Reward extends SugarRecord {
         this.value = value;
     }
 
-
     public String getName() {
         return name;
     }

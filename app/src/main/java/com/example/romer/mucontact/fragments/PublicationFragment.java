@@ -38,11 +38,9 @@ public class PublicationFragment extends Fragment {
     private static String TAG = "MuContact";
     private User user;
 
-
     public PublicationFragment() {
         // Required empty public constructor
     }
-
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -57,7 +55,6 @@ public class PublicationFragment extends Fragment {
         publicationsRecyclerView.setLayoutManager(publicationsLayoutManager);
         updatePublications();
         return view;
-
     }
 
     private void updatePublications() {
@@ -78,7 +75,6 @@ public class PublicationFragment extends Fragment {
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-
                     }
 
                     @Override

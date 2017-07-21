@@ -1,24 +1,24 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:2:1-36:12
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:2:1-37:12
 	package
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:3:5-42
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:3:5-42
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
 	android:versionName
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
 	xmlns:android
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:2:11-69
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:2:11-69
 	android:versionCode
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.INTERNET
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:5:5-67
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:5:5-67
 	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:5:22-64
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:5:22-64
 application
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:7:5-34:19
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:7:5-35:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\romer\.android\build-cache\5905e33f0940ec14877933e27be61b94ed03ee2f\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\romer\.android\build-cache\982c9ccfdb8f076176327f16a1c921136c60c1ac\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\romer\.android\build-cache\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\output\AndroidManifest.xml:29:5-20
@@ -32,57 +32,59 @@ MERGED from [com.android.support:support-core-ui:25.3.1] C:\Users\romer\.android
 MERGED from [com.android.support:support-core-utils:25.3.1] C:\Users\romer\.android\build-cache\b6c3ea864c1b42d88be900dda1e95a5fd217d6e0\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:support-compat:25.3.1] C:\Users\romer\.android\build-cache\f7d3a82f4131dd0571d310b66b8416a504aef364\output\AndroidManifest.xml:29:5-20
 	android:label
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:11:9-41
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:11:9-41
 	android:supportsRtl
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:13:9-35
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:13:9-35
 	android:roundIcon
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:12:9-54
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:12:9-54
 	android:allowBackup
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:9:9-35
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:9:9-35
 	android:icon
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:10:9-43
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:10:9-43
 	android:theme
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:14:9-40
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:14:9-40
 	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:8:9-37
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:8:9-37
 activity#com.example.romer.mucontact.activities.LoginActivity
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:15:9-21:20
-	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:15:19-59
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:16:13-20:29
-action#android.intent.action.MAIN
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:17:17-69
-	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:17:25-66
-category#android.intent.category.LAUNCHER
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:19:17-77
-	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:19:27-74
-activity#com.example.romer.mucontact.activities.MainActivity
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:22:9-24:59
-	android:label
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:24:13-56
-	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:23:13-52
-activity#com.example.romer.mucontact.activities.RewardActivity
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:25:9-33:20
-	android:label
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:27:13-58
-	android:parentActivityName
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:28:13-66
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:15:9-22:20
 	android:theme
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:29:13-56
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:16:13-56
 	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:26:13-54
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:15:19-59
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:17:13-21:29
+action#android.intent.action.MAIN
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:18:17-69
+	android:name
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:18:25-66
+category#android.intent.category.LAUNCHER
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:20:17-77
+	android:name
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:20:27-74
+activity#com.example.romer.mucontact.activities.MainActivity
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:23:9-25:59
+	android:label
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:25:13-56
+	android:name
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:24:13-52
+activity#com.example.romer.mucontact.activities.RewardActivity
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:26:9-34:20
+	android:label
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:28:13-58
+	android:parentActivityName
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:29:13-66
+	android:theme
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:30:13-56
+	android:name
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:27:13-54
 meta-data#android.support.PARENT_ACTIVITY
-ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:30:13-32:87
+ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:31:13-33:87
 	android:value
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:32:17-84
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:33:17-84
 	android:name
-		ADDED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml:31:17-63
+		ADDED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml:32:17-63
 uses-sdk
-INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\romer\.android\build-cache\5905e33f0940ec14877933e27be61b94ed03ee2f\output\AndroidManifest.xml:5:5-7:41
 MERGED from [com.android.support:design:25.3.1] C:\Users\romer\.android\build-cache\982c9ccfdb8f076176327f16a1c921136c60c1ac\output\AndroidManifest.xml:21:5-23:62
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\romer\.android\build-cache\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\output\AndroidManifest.xml:21:5-23:78
@@ -101,11 +103,11 @@ MERGED from [com.amitshekhar.android:android-networking:1.0.0] C:\Users\romer\.a
 	tools:overrideLibrary
 		ADDED from [com.android.support:design:25.3.1] C:\Users\romer\.android\build-cache\982c9ccfdb8f076176327f16a1c921136c60c1ac\output\AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
-		INJECTED from C:\Users\romer\Desktop\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\romer\AndroidStudioProjects\MuContact\app\src\main\AndroidManifest.xml
 meta-data#android.support.VERSION
 ADDED from [com.android.support:design:25.3.1] C:\Users\romer\.android\build-cache\982c9ccfdb8f076176327f16a1c921136c60c1ac\output\AndroidManifest.xml:25:5-27:34
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\romer\.android\build-cache\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\output\AndroidManifest.xml:25:5-27:34

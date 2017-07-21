@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\romer\\Desktop\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action_tombstone.xml",
-        "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout-v21\\notification_action_tombstone.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout-v21\\notification_template_icon_group.xml"
     },
@@ -14,18 +10,6 @@
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\Users\\romer\\Desktop\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_action.xml",
-        "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout-v21\\notification_action.xml"
-    },
-    {
-        "merged": "C:\\Users\\romer\\Desktop\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_icon_group.xml",
-        "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout-v21\\notification_template_icon_group.xml"
-    },
-    {
-        "merged": "C:\\Users\\romer\\Desktop\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
-        "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout-v21\\notification_template_custom_big.xml",
