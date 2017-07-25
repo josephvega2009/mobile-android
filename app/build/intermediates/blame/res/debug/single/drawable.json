@@ -24,10 +24,6 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_cab_background_top_material.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_dashboard_black_24dp.xml",
-        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_dashboard_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_radio_material.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
@@ -64,16 +60,12 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable\\navigation_empty_icon.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_collections_black_24dp.xml",
-        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_collections_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_item_background_holo_light.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_item_background_holo_light.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_notifications_black_24dp.xml",
-        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_notifications_black_24dp.xml"
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_card_giftcard_black_24dp.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_card_giftcard_black_24dp.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_home_black_24dp.xml",
@@ -116,20 +108,12 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_ic_search_api_material.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_settings_black_24dp.xml",
-        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_settings_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_switch_thumb_material.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_seekbar_tick_mark_material.xml"
-    },
-    {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_edit_white_24dp.xml",
-        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_edit_white_24dp.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
@@ -180,7 +164,7 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_btn_check_material.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_search_white_24dp.xml",
-        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_search_white_24dp.xml"
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\ic_public_black_24dp.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\drawable\\ic_public_black_24dp.xml"
     }
 ]

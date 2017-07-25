@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.romer.mucontact.test" >
+    package="pe.com.mucontact.test" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="23"
         android:targetSdkVersion="25" />
 
     <instrumentation
         android:name="android.support.test.runner.AndroidJUnitRunner"
         android:functionalTest="false"
         android:handleProfiling="false"
-        android:label="Tests for com.example.romer.mucontact"
-        android:targetPackage="com.example.romer.mucontact" />
+        android:label="Tests for pe.com.mucontact"
+        android:targetPackage="pe.com.mucontact" />
 
     <application>
         <uses-library android:name="android.test.runner" />

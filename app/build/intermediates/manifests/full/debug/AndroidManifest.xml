@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.romer.mucontact"
+    package="pe.com.mucontact"
     android:versionCode="1"
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="23"
         android:targetSdkVersion="25" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -15,16 +15,13 @@
         android:value="25.3.1" />
 
     <application
-        android:name="com.example.romer.mucontact.MuContactApp"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme" >
-        <activity
-            android:name="com.example.romer.mucontact.activities.LoginActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+        <activity android:name="pe.com.mucontact.activities.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -32,16 +29,17 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.romer.mucontact.activities.MainActivity"
+            android:name="pe.com.mucontact.activities.MainActivity"
+            android:configChanges="orientation|screenSize|screenLayout"
             android:label="@string/title_activity_main" />
         <activity
-            android:name="com.example.romer.mucontact.activities.RewardActivity"
-            android:label="@string/title_activity_reward"
-            android:parentActivityName="com.example.romer.mucontact.activities.MainActivity"
+            android:name="pe.com.mucontact.activities.AboutRewardActivity"
+            android:label="@string/title_activity_about_reward"
+            android:parentActivityName="pe.com.mucontact.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value="com.example.romer.mucontact.activities.MainActivity" />
+                android:value="pe.com.mucontact.activities.MainActivity" />
         </activity>
     </application>
 
