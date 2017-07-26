@@ -336,6 +336,10 @@
         "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_home.xml",
+        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\src\\main\\res\\layout\\content_home.xml"
+    },
+    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
         "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\layout\\activity_main.xml"
     },

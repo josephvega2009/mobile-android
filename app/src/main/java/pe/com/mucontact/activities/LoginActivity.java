@@ -9,6 +9,7 @@ import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
@@ -30,6 +31,7 @@ public class LoginActivity extends AppCompatActivity {
     boolean correctPassword = false;
     String email;
     String password;
+    ProgressBar loginProgressBar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -37,21 +39,26 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
         emailTextInputEditText = (EditText) findViewById(R.id.emailTextInputEditText);
         passwordTextInputEditText = (EditText) findViewById(R.id.passwordInputEditText);
+        loginProgressBar = (ProgressBar) findViewById(R.id.loginProgressBar);
+        loginProgressBar.setVisibility(View.GONE);
         ((Button) findViewById(R.id.loginButton))
                 .setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
+                        loginProgressBar.setVisibility(View.VISIBLE);
                         intent = new Intent (v.getContext(), MainActivity.class);
                         if(Patterns.EMAIL_ADDRESS.matcher(emailTextInputEditText.getText().toString()).matches()==false){
                             emailTextInputEditText.setError("Invalid email");
                             correctEmail = false;
+                            loginProgressBar.setVisibility(View.INVISIBLE);
                         } else {
                             emailTextInputEditText.setError(null);
                             correctEmail = true;
                         }
-                        if(passwordTextInputEditText.getText().toString()==null) {
+                        if(passwordTextInputEditText.getText().toString() == "") {
                             passwordTextInputEditText.setError("Invalid password");
                             correctPassword = false;
+                            loginProgressBar.setVisibility(View.INVISIBLE);
                         } else {
                             passwordTextInputEditText.setError(null);
                             correctPassword = true;
@@ -76,10 +83,12 @@ public class LoginActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         startActivity(intent);
+                        loginProgressBar.setVisibility(View.INVISIBLE);
                     }
                     @Override
                     public void onError(ANError error) {
                         Toast.makeText(getApplicationContext(), "User or password incorrect", Toast.LENGTH_SHORT).show();
+                        loginProgressBar.setVisibility(View.INVISIBLE);
                     }
                 });
     }

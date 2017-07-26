@@ -11,6 +11,7 @@ public class NewApiService {
     public static String REWARD_URL = "https://mucontact.herokuapp.com/api/reward";
     public static String PUBLICATION_URL = "https://mucontact.herokuapp.com/api/publication";
     public static String USERS_URL = "https://mucontact.herokuapp.com/api/user";
+    public static String CRAFTMEN_URL = "https://mucontact.herokuapp.com/api/craftmen";
     private Reward currentReward;
 
     public Reward getCurrentReward() {
