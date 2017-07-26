@@ -3,7 +3,6 @@ package pe.com.mucontact.fragments;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -23,18 +22,14 @@ import java.util.List;
 
 import pe.com.mucontact.R;
 import pe.com.mucontact.adapters.HomeAdapter;
-import pe.com.mucontact.adapters.RewardsAdapter;
-import pe.com.mucontact.models.Craftmen;
-import pe.com.mucontact.models.Reward;
+import pe.com.mucontact.models.Craftman;
 import pe.com.mucontact.network.NewApiService;
-
-import static android.content.res.Configuration.ORIENTATION_PORTRAIT;
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
-    List<Craftmen> craftmen;
+    List<Craftman> craftman;
     private static String TAG = "MuContact";
     RecyclerView homeRecyclerView;
     HomeAdapter homeAdapter;
@@ -50,8 +45,8 @@ public class HomeFragment extends Fragment {
         // Inflate the layout for this fragment
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         homeRecyclerView = (RecyclerView) view.findViewById(R.id.homeRecyclerView);
-        craftmen = new ArrayList<>();
-        homeAdapter = new HomeAdapter(craftmen);
+        craftman = new ArrayList<>();
+        homeAdapter = new HomeAdapter(craftman);
         homeRecyclerView.setAdapter(homeAdapter);
         homeRecyclerView.setLayoutManager(craftmenLayoutManager);
         updateCraftmen();
@@ -59,7 +54,7 @@ public class HomeFragment extends Fragment {
     }
     private void updateCraftmen() {
         AndroidNetworking
-                .get(NewApiService.CRAFTMEN_URL)
+                .get(NewApiService.CRAFTMAN_URL)
                 .setTag(TAG)
                 .setPriority(Priority.LOW)
                 .build()
@@ -68,9 +63,9 @@ public class HomeFragment extends Fragment {
                     public void onResponse(JSONObject response) {
                         if(response == null) return;
                         try {
-                            craftmen = Craftmen.build(response.getJSONArray("craftmen"));
-                            Log.d(TAG, "Found Craftmen: " + String.valueOf(craftmen.size()));
-                            homeAdapter.setCraftmen(craftmen);
+                            craftman = Craftman.build(response.getJSONArray("craftman"));
+                            Log.d(TAG, "Found Craftman: " + String.valueOf(craftman.size()));
+                            homeAdapter.setCraftman(craftman);
                             homeAdapter.notifyDataSetChanged();
                         } catch (JSONException e) {
                             e.printStackTrace();

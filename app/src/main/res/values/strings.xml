@@ -5,9 +5,9 @@
     <string name="password_hint">Password</string>
     <string name="loginButton">Login</string>
 
-    <string name="rewardButton">Reward</string>
-
-    <string name="title_activity_main">MainActivity</string>
+    <string name="rewardButton">I want it!</string>
+    <string name="sendOrderButton">Send a Order</string>
+    <string name="title_activity_main">Welcome!</string>
     <string name="title_home">Home</string>
     <string name="title_publications">Publications</string>
     <string name="title_rewards">Rewards</string>

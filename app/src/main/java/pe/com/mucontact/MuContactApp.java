@@ -4,6 +4,7 @@ import android.app.Application;
 
 import com.androidnetworking.AndroidNetworking;
 
+import pe.com.mucontact.models.Craftman;
 import pe.com.mucontact.models.Reward;
 import pe.com.mucontact.network.NewApiService;
 
@@ -28,6 +29,12 @@ public class MuContactApp extends Application {
         AndroidNetworking.initialize(getApplicationContext());
         newApiService = new NewApiService();
     }
+    public MuContactApp setCurrentCraftman(Craftman craftman){
+        newApiService.setCurrentCraftman(craftman);
+        return this;
+    }
+
+    public Craftman getCurrentCraftman() {return newApiService.getCurrentCraftman(); }
 
     public MuContactApp setCurrentReward(Reward reward) {
         newApiService.setCurrentReward(reward);
