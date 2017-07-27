@@ -22,7 +22,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import pe.com.mucontact.R;
-import pe.com.mucontact.adapters.PublicationAdapter;
+import pe.com.mucontact.adapters.PublicationsAdapter;
 import pe.com.mucontact.models.Publication;
 import pe.com.mucontact.models.User;
 import pe.com.mucontact.network.NewApiService;
@@ -32,7 +32,7 @@ import pe.com.mucontact.network.NewApiService;
  */
 public class PublicationFragment extends Fragment {
     private RecyclerView publicationsRecyclerView;
-    private PublicationAdapter publicationsAdapter;
+    private PublicationsAdapter publicationsAdapter;
     private RecyclerView.LayoutManager publicationsLayoutManager;
     private List<Publication> publications;
     private static String TAG = "MuContact";
@@ -49,7 +49,7 @@ public class PublicationFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_publication, container, false);
         publicationsRecyclerView = (RecyclerView) view.findViewById(R.id.publicationRecyclerView);
         publications = new ArrayList<>();
-        publicationsAdapter = (new PublicationAdapter()).setPublications(publications);
+        publicationsAdapter = (new PublicationsAdapter()).setPublications(publications);
         publicationsLayoutManager = new LinearLayoutManager(view.getContext());
         publicationsRecyclerView.setAdapter(publicationsAdapter);
         publicationsRecyclerView.setLayoutManager(publicationsLayoutManager);

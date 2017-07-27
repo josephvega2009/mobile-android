@@ -15,17 +15,17 @@ import pe.com.mucontact.models.Publication;
  * Created by romer on 25/7/2017.
  */
 
-public class PublicationAdapter extends RecyclerView.Adapter<PublicationAdapter.ViewHolder>{
+public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapter.ViewHolder>{
     private List<Publication> publications;
 
-    public PublicationAdapter() {
+    public PublicationsAdapter() {
     }
 
-    public PublicationAdapter(List<Publication> publications) {
+    public PublicationsAdapter(List<Publication> publications) {
         this.publications = publications;
     }
     @Override
-    public PublicationAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public PublicationsAdapter.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         return new ViewHolder(LayoutInflater
                 .from(parent.getContext())
                 .inflate(R.layout.content_publication, parent,false));
@@ -33,7 +33,7 @@ public class PublicationAdapter extends RecyclerView.Adapter<PublicationAdapter.
 
     @Override
     public void onBindViewHolder(
-            PublicationAdapter.ViewHolder holder, int position) {
+            PublicationsAdapter.ViewHolder holder, int position) {
 
         holder.instrumentTextView.setText(publications.get(position).getInstrument());
         holder.craftmenTextView.setText(publications.get(position).getCraftmen());
@@ -50,7 +50,7 @@ public class PublicationAdapter extends RecyclerView.Adapter<PublicationAdapter.
         return publications;
     }
 
-    public PublicationAdapter setPublications(List<Publication> publications) {
+    public PublicationsAdapter setPublications(List<Publication> publications) {
         this.publications = publications;
         return this;
     }

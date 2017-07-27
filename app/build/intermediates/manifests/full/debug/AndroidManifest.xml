@@ -44,6 +44,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pe.com.mucontact.activities.MainActivity" />
         </activity>
+        <activity
+            android:name="pe.com.mucontact.activities.AboutCraftmanActivity"
+            android:label="@string/title_activity_about_craftman"
+            android:parentActivityName="pe.com.mucontact.activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar" >
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pe.com.mucontact.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

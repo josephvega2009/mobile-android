@@ -16,18 +16,21 @@ public class NewApiService {
     private Reward currentReward;
     private Craftman currentCraftman;
 
-    public Craftman getCurrentCraftman(){ return currentCraftman;}
-
-    public NewApiService setCurrentCraftman(Craftman currentCraftman){
-        this.currentCraftman = currentCraftman;
-        return this;
-    }
     public Reward getCurrentReward() {
         return currentReward;
     }
 
     public NewApiService setCurrentReward(Reward currentReward) {
         this.currentReward = currentReward;
+        return this;
+    }
+
+    public Craftman getCurrentCraftman() {
+        return currentCraftman;
+    }
+
+    public NewApiService setCurrentCraftman(Craftman currentCraftman){
+        this.currentCraftman = currentCraftman;
         return this;
     }
 }

@@ -47,7 +47,7 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         homeRecyclerView = (RecyclerView) view.findViewById(R.id.homeRecyclerView);
         craftmen = new ArrayList<>();
-        craftmanAdapter = (new CraftmenAdapter()).setCraftman(craftmen);
+        craftmanAdapter = (new CraftmenAdapter()).setCraftmen(craftmen);
         craftmanLayoutManager = new LinearLayoutManager(view.getContext());
         homeRecyclerView.setAdapter(craftmanAdapter);
         homeRecyclerView.setLayoutManager(craftmanLayoutManager);
@@ -67,7 +67,7 @@ public class HomeFragment extends Fragment {
                         try {
                             craftmen = Craftman.build(response.getJSONArray("craftmen"));
                             Log.d(TAG, "Found Craftmen: " + String.valueOf(craftmen.size()));
-                            craftmanAdapter.setCraftman(craftmen);
+                            craftmanAdapter.setCraftmen(craftmen);
                             craftmanAdapter.notifyDataSetChanged();
                         } catch (JSONException e) {
                             e.printStackTrace();

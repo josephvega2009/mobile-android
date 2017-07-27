@@ -29,12 +29,6 @@ public class MuContactApp extends Application {
         AndroidNetworking.initialize(getApplicationContext());
         newApiService = new NewApiService();
     }
-    public MuContactApp setCurrentCraftman(Craftman craftman){
-        newApiService.setCurrentCraftman(craftman);
-        return this;
-    }
-
-    public Craftman getCurrentCraftman() {return newApiService.getCurrentCraftman(); }
 
     public MuContactApp setCurrentReward(Reward reward) {
         newApiService.setCurrentReward(reward);
@@ -43,5 +37,14 @@ public class MuContactApp extends Application {
 
     public Reward getCurrentReward() {
         return newApiService.getCurrentReward();
+    }
+
+    public MuContactApp setCurrentCraftman(Craftman craftman){
+        newApiService.setCurrentCraftman(craftman);
+        return this;
+    }
+
+    public Craftman getCurrentCraftman() {
+        return newApiService.getCurrentCraftman();
     }
 }

@@ -1,8 +1,8 @@
 package pe.com.mucontact.activities;
 
 import android.os.Bundle;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.Toolbar;
 import android.widget.TextView;
 
 import pe.com.mucontact.MuContactApp;
@@ -21,9 +21,11 @@ public class AboutCraftmanActivity extends AppCompatActivity {
     Craftman craftman;
 
     @Override
-    protected void onCreate(@Nullable Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_craftman);
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         nameTextView = (TextView) findViewById(R.id.nameTextView);
