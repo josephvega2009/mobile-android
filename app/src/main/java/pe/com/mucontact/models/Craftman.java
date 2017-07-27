@@ -14,36 +14,30 @@ import java.util.List;
  */
 
 public class Craftman extends SugarRecord{
-    private String name;
-    private String description;
-    private String phone;
+    private String _id;
     private String level;
+    private String phone;
+    private String description;
+    private String name;
 
-    public Craftman(String name, String description, String phone, String level) {
-        this.setName(name);
-        this.setDescription(description);
-        this.setPhone(phone);
-        this.setLevel(level);
-    }
 
     public Craftman() {
     }
 
-    public String getName() {
-        return name;
-    }
-
-    public Craftman setName(String name) {
-        this.name = name;
-        return this;
-    }
-
-    public String getDescription() {
-        return description;
-    }
-
-    public Craftman setDescription(String description) {
+    public Craftman(String _id, String level, String phone, String description, String name) {
+        this._id = _id;
+        this.phone = level;
+        this.level = phone;
         this.description = description;
+        this.name = name;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public Craftman set_id(String _id) {
+        this._id = _id;
         return this;
     }
 
@@ -65,14 +59,35 @@ public class Craftman extends SugarRecord{
         return this;
     }
 
-    public static Craftman build(JSONObject jsonCraftmen) {
-        if(jsonCraftmen == null) return null;
+    public String getDescription() {
+        return description;
+    }
+
+    public Craftman setDescription(String description) {
+        this.description = description;
+        return this;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public Craftman setName(String name) {
+        this.name = name;
+        return this;
+    }
+
+
+
+    public static Craftman build(JSONObject jsonCraftman) {
+        if(jsonCraftman == null) return null;
         Craftman craftman = new Craftman();
         try {
-            craftman.setName(jsonCraftmen.getString("name"))
-                    .setDescription(jsonCraftmen.getString("description"))
-                    .setPhone(jsonCraftmen.getString("phone"))
-                    .setLevel(jsonCraftmen.getString("level"));
+            craftman.set_id(jsonCraftman.getString("_id"))
+                    .setLevel(jsonCraftman.getString("level"))
+                    .setPhone(jsonCraftman.getString("phone"))
+                    .setDescription(jsonCraftman.getString("description"))
+                    .setName(jsonCraftman.getString("name"));
             return craftman;
         } catch (JSONException e) {
             e.printStackTrace();
@@ -83,13 +98,15 @@ public class Craftman extends SugarRecord{
     public static List<Craftman> build(JSONArray jsonCraftmen) {
         if(jsonCraftmen == null) return null;
         int length = jsonCraftmen.length();
-        List<Craftman> craftman = new ArrayList<>();
+        List<Craftman> craftmen = new ArrayList<>();
         for(int i = 0; i < length; i++)
             try {
-                craftman.add(Craftman.build(jsonCraftmen.getJSONObject(i)));
+                craftmen.add(Craftman.build(jsonCraftmen.getJSONObject(i)));
             } catch (JSONException e) {
                 e.printStackTrace();
             }
-        return craftman;
+        return craftmen;
     }
+
+
 }
