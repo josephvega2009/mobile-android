@@ -1,8 +1,6 @@
 package pe.com.mucontact.activities;
 
 import android.content.Intent;
-import android.support.design.widget.TextInputEditText;
-import android.support.v4.util.PatternsCompat;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Patterns;
@@ -25,8 +23,8 @@ import pe.com.mucontact.network.NewApiService;
 public class LoginActivity extends AppCompatActivity {
     Intent intent;
     String TAG = "MuContact";
-    EditText emailTextInputEditText;
-    EditText passwordTextInputEditText;
+    EditText emailEditText;
+    EditText passwordEditText;
     boolean correctEmail = false;
     boolean correctPassword = false;
     String email;
@@ -37,8 +35,8 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-        emailTextInputEditText = (EditText) findViewById(R.id.emailTextInputEditText);
-        passwordTextInputEditText = (EditText) findViewById(R.id.passwordInputEditText);
+        emailEditText = (EditText) findViewById(R.id.emailTextInputEditText);
+        passwordEditText = (EditText) findViewById(R.id.passwordInputEditText);
         loginProgressBar = (ProgressBar) findViewById(R.id.loginProgressBar);
         loginProgressBar.setVisibility(View.GONE);
         ((Button) findViewById(R.id.loginButton))
@@ -47,25 +45,25 @@ public class LoginActivity extends AppCompatActivity {
                     public void onClick(View v) {
                         loginProgressBar.setVisibility(View.VISIBLE);
                         intent = new Intent (v.getContext(), MainActivity.class);
-                        if(Patterns.EMAIL_ADDRESS.matcher(emailTextInputEditText.getText().toString()).matches()==false){
-                            emailTextInputEditText.setError("Invalid email");
+                        if(Patterns.EMAIL_ADDRESS.matcher(emailEditText.getText().toString()).matches()==false){
+                            emailEditText.setError("Invalid email");
                             correctEmail = false;
                             loginProgressBar.setVisibility(View.INVISIBLE);
                         } else {
-                            emailTextInputEditText.setError(null);
+                            emailEditText.setError(null);
                             correctEmail = true;
                         }
-                        if(passwordTextInputEditText.getText().toString() == "") {
-                            passwordTextInputEditText.setError("Invalid password");
+                        if(passwordEditText.getText().toString().length() == 0) {
+                            passwordEditText.setError("Invalid password");
                             correctPassword = false;
                             loginProgressBar.setVisibility(View.INVISIBLE);
                         } else {
-                            passwordTextInputEditText.setError(null);
+                            passwordEditText.setError(null);
                             correctPassword = true;
                         }
                         if(correctEmail == true && correctPassword == true) {
-                            email = emailTextInputEditText.getText().toString();
-                            password = passwordTextInputEditText.getText().toString();
+                            email = emailEditText.getText().toString();
+                            password = passwordEditText.getText().toString();
                             login();
                         }
                     }

@@ -14,7 +14,6 @@ import java.util.List;
  */
 
 public class Craftman extends SugarRecord{
-    private String _id;
     private String level;
     private String phone;
     private String description;
@@ -24,21 +23,11 @@ public class Craftman extends SugarRecord{
     public Craftman() {
     }
 
-    public Craftman(String _id, String level, String phone, String description, String name) {
-        this._id = _id;
+    public Craftman(String level, String phone, String description, String name) {
         this.phone = level;
         this.level = phone;
         this.description = description;
         this.name = name;
-    }
-
-    public String get_id() {
-        return _id;
-    }
-
-    public Craftman set_id(String _id) {
-        this._id = _id;
-        return this;
     }
 
     public String getPhone() {
@@ -77,14 +66,11 @@ public class Craftman extends SugarRecord{
         return this;
     }
 
-
-
     public static Craftman build(JSONObject jsonCraftman) {
         if(jsonCraftman == null) return null;
         Craftman craftman = new Craftman();
         try {
-            craftman.set_id(jsonCraftman.getString("_id"))
-                    .setLevel(jsonCraftman.getString("level"))
+            craftman.setLevel(jsonCraftman.getString("level"))
                     .setPhone(jsonCraftman.getString("phone"))
                     .setDescription(jsonCraftman.getString("description"))
                     .setName(jsonCraftman.getString("name"));
@@ -95,13 +81,13 @@ public class Craftman extends SugarRecord{
         return null;
     }
 
-    public static List<Craftman> build(JSONArray jsonCraftmen) {
-        if(jsonCraftmen == null) return null;
-        int length = jsonCraftmen.length();
+    public static List<Craftman> build(JSONArray jsonCraftman) {
+        if(jsonCraftman == null) return null;
+        int length = jsonCraftman.length();
         List<Craftman> craftmen = new ArrayList<>();
         for(int i = 0; i < length; i++)
             try {
-                craftmen.add(Craftman.build(jsonCraftmen.getJSONObject(i)));
+                craftmen.add(Craftman.build(jsonCraftman.getJSONObject(i)));
             } catch (JSONException e) {
                 e.printStackTrace();
             }

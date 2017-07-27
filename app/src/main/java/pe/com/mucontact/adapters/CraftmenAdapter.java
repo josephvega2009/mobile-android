@@ -4,7 +4,6 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ImageView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -17,9 +16,9 @@ import pe.com.mucontact.models.Craftman;
  */
 
 public class CraftmenAdapter extends RecyclerView.Adapter<CraftmenAdapter.ViewHolder>{
-    private List<Craftman> craftmen;
+    private List<Craftman> craftman;
 
-    public CraftmenAdapter(List<Craftman> craftmen){this.craftmen = craftmen;}
+    public CraftmenAdapter(List<Craftman> craftman){this.craftman = craftman;}
 
     public CraftmenAdapter(){}
 
@@ -34,29 +33,22 @@ public class CraftmenAdapter extends RecyclerView.Adapter<CraftmenAdapter.ViewHo
     @Override
     public void onBindViewHolder(
             CraftmenAdapter.ViewHolder holder, int  position) {
-        holder.nameTextView.setText(craftmen.get(position).getName());
-        holder.descriptionTextView.setText(craftmen.get(position).getDescription());
-        holder.phoneTextView.setText(craftmen.get(position).getPhone());
-        holder.levelTextView.setText(craftmen.get(position).getLevel());
-        //holder.detailsImageView.setOnClickListener(new View.OnClickListener(){
-        //@Override
-        //public void onClick(View v) {
-          //  MuContactApp.getInstance().setCurrentReward(craftman.get(position));
-           // v.getContext().startActivity(new Intent(v.getContext(), AboutCraftmanActivity.class));
-        //}
-        //});
+        holder.nameTextView.setText(craftman.get(position).getName());
+        holder.descriptionTextView.setText(craftman.get(position).getDescription());
+        holder.phoneTextView.setText(craftman.get(position).getPhone());
+        holder.levelTextView.setText(craftman.get(position).getLevel());
     }
 
     public int getItemCount() {
-        return craftmen.size();
+        return craftman.size();
     }
 
-    public List<Craftman> getCraftmen() {
-        return craftmen;
+    public List<Craftman> getCraftman() {
+        return craftman;
     }
 
-    public CraftmenAdapter setCraftmen(List<Craftman> craftmen) {
-        this.craftmen = craftmen;
+    public CraftmenAdapter setCraftman(List<Craftman> craftman) {
+        this.craftman = craftman;
         return this;
     }
 

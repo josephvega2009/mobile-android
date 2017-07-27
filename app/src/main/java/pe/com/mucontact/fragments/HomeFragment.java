@@ -30,11 +30,11 @@ import pe.com.mucontact.network.NewApiService;
  * A simple {@link Fragment} subclass.
  */
 public class HomeFragment extends Fragment {
+    private RecyclerView homeRecyclerView;
+    private CraftmenAdapter craftmanAdapter;
+    private RecyclerView.LayoutManager craftmanLayoutManager;
     private List<Craftman> craftmen;
     private static String TAG = "MuContact";
-    private RecyclerView homeRecyclerView;
-    private CraftmenAdapter craftmenAdapter;
-    private RecyclerView.LayoutManager craftmenLayoutManager;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -47,10 +47,10 @@ public class HomeFragment extends Fragment {
         View view = inflater.inflate(R.layout.fragment_home, container, false);
         homeRecyclerView = (RecyclerView) view.findViewById(R.id.homeRecyclerView);
         craftmen = new ArrayList<>();
-        craftmenAdapter = (new CraftmenAdapter()).setCraftmen(craftmen);
-        craftmenLayoutManager = new LinearLayoutManager(view.getContext());
-        homeRecyclerView.setAdapter(craftmenAdapter);
-        homeRecyclerView.setLayoutManager(craftmenLayoutManager);
+        craftmanAdapter = (new CraftmenAdapter()).setCraftman(craftmen);
+        craftmanLayoutManager = new LinearLayoutManager(view.getContext());
+        homeRecyclerView.setAdapter(craftmanAdapter);
+        homeRecyclerView.setLayoutManager(craftmanLayoutManager);
         updateCraftmen();
         return view;
     }
@@ -67,8 +67,8 @@ public class HomeFragment extends Fragment {
                         try {
                             craftmen = Craftman.build(response.getJSONArray("craftmen"));
                             Log.d(TAG, "Found Craftmen: " + String.valueOf(craftmen.size()));
-                            craftmenAdapter.setCraftmen(craftmen);
-                            craftmenAdapter.notifyDataSetChanged();
+                            craftmanAdapter.setCraftman(craftmen);
+                            craftmanAdapter.notifyDataSetChanged();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }

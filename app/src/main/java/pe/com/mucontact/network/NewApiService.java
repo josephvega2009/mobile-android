@@ -12,11 +12,11 @@ public class NewApiService {
     public static String REWARD_URL = "https://mucontact.herokuapp.com/api/reward";
     public static String PUBLICATION_URL = "https://mucontact.herokuapp.com/api/publication";
     public static String USERS_URL = "https://mucontact.herokuapp.com/api/user";
-    public static String CRAFTMAN_URL = "https://mucontact.herokuapp.com/api/craftmen";
+    public static String CRAFTMAN_URL = "https://mucontact.herokuapp.com/api/craftman";
     private Reward currentReward;
     private Craftman currentCraftman;
 
-    public Craftman getCurrentCraftman(){ return  currentCraftman;}
+    public Craftman getCurrentCraftman(){ return currentCraftman;}
 
     public NewApiService setCurrentCraftman(Craftman currentCraftman){
         this.currentCraftman = currentCraftman;

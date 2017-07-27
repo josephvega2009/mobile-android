@@ -24,6 +24,14 @@
         "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_public_black_24dp.xml"
     },
     {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_public_black_24dp.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_public_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml",
         "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml"
     },
@@ -46,5 +54,9 @@
     {
         "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_public_black_24dp.xml",
         "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_public_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml"
     }
 ]
