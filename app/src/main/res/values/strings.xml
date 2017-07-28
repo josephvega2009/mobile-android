@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">MuContact</string>
 
+    <string name="name_hint">Complete Name</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="loginButton">Login</string>
-
+    <string name="signUpButton">Register</string>
     <string name="rewardButton">I want it!</string>
     <string name="sendOrderButton">Send a Order</string>
-    <string name="title_activity_main">Welcome!</string>
+    <string name="title_activity_main">MuContact!</string>
     <string name="title_home">Home</string>
     <string name="title_publications">Publications</string>
     <string name="title_rewards">Rewards</string>
@@ -22,5 +23,6 @@
     <string name="phone">Sample phone</string>
     <string name="instrument">Sample instrument</string>
     <string name="craftman">Sample craftman</string>
+    <string name="title_activity_register">Register New Account</string>
 
 </resources>
