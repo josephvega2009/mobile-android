@@ -3,11 +3,13 @@ package pe.com.mucontact.activities;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ProgressBar;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.androidnetworking.AndroidNetworking;
@@ -15,9 +17,12 @@ import com.androidnetworking.common.Priority;
 import com.androidnetworking.error.ANError;
 import com.androidnetworking.interfaces.JSONObjectRequestListener;
 
+import org.json.JSONException;
 import org.json.JSONObject;
 
+import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
+import pe.com.mucontact.models.User;
 import pe.com.mucontact.network.NewApiService;
 
 public class LoginActivity extends AppCompatActivity {
@@ -25,11 +30,14 @@ public class LoginActivity extends AppCompatActivity {
     String TAG = "MuContact";
     EditText emailEditText;
     EditText passwordEditText;
+    TextView signUpTextView;
     boolean correctEmail = false;
     boolean correctPassword = false;
     String email;
     String password;
     ProgressBar loginProgressBar;
+    User user;
+    String token;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,6 +76,15 @@ public class LoginActivity extends AppCompatActivity {
                         }
                     }
                 });
+        signUpTextView = (TextView) findViewById(R.id.signUpTextView);
+        signUpTextView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.getContext()
+                        .startActivity(new Intent(v.getContext(),
+                                RegisterActivity.class));
+            }
+        });
     }
 
     private void login() {
@@ -80,6 +97,15 @@ public class LoginActivity extends AppCompatActivity {
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override
                     public void onResponse(JSONObject response) {
+                        if(response == null) return;
+                        try {
+                            token = response.getString("token");
+                            user = User.build(response.getJSONObject("user"));
+                            MuContactApp.getInstance().setCurrentToken(token);
+                            MuContactApp.getInstance().setCurrentUser(user);
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
                         startActivity(intent);
                         loginProgressBar.setVisibility(View.INVISIBLE);
                     }

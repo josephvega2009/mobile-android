@@ -14,6 +14,7 @@ import java.util.List;
  */
 
 public class Reward extends SugarRecord {
+    private String _id;
     private String title;
     private String description;
     private String url;
@@ -22,11 +23,21 @@ public class Reward extends SugarRecord {
     public Reward() {
     }
 
-    public Reward(String title, String description, String url, Double value) {
+    public Reward(String _id,String title, String description, String url, Double value) {
+        this._id = _id;
         this.title = title;
         this.description = description;
         this.url = url;
         this.value = value;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public Reward set_id(String _id) {
+        this._id = _id;
+        return this;
     }
 
     public String getTitle() {
@@ -69,7 +80,8 @@ public class Reward extends SugarRecord {
         if(jsonReward == null) return null;
         Reward reward = new Reward();
         try {
-            reward.setTitle(jsonReward.getString("name"))
+            reward.set_id(jsonReward.getString("_id"))
+                    .setTitle(jsonReward.getString("name"))
                     .setDescription(jsonReward.getString("description"))
                     .setUrl(jsonReward.getString("image"))
                     .setValue(jsonReward.getDouble("value"));

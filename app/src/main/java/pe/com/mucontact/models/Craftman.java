@@ -1,7 +1,5 @@
 package pe.com.mucontact.models;
 
-import com.orm.SugarRecord;
-
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -13,7 +11,8 @@ import java.util.List;
  * Created by Franklin on 26/07/2017.
  */
 
-public class Craftman extends SugarRecord{
+public class Craftman{
+    private String _id;
     private String level;
     private String phone;
     private String description;
@@ -23,11 +22,21 @@ public class Craftman extends SugarRecord{
     public Craftman() {
     }
 
-    public Craftman(String level, String phone, String description, String name) {
+    public Craftman(String _id, String level, String phone, String description, String name) {
+        this._id = _id;
         this.phone = level;
         this.level = phone;
         this.description = description;
         this.name = name;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public Craftman set_id(String _id) {
+        this._id = _id;
+        return this;
     }
 
     public String getPhone() {
@@ -70,7 +79,8 @@ public class Craftman extends SugarRecord{
         if(jsonCraftman == null) return null;
         Craftman craftman = new Craftman();
         try {
-            craftman.setLevel(jsonCraftman.getString("level"))
+            craftman.set_id(jsonCraftman.getString("_id"))
+                    .setLevel(jsonCraftman.getString("level"))
                     .setPhone(jsonCraftman.getString("phone"))
                     .setDescription(jsonCraftman.getString("description"))
                     .setName(jsonCraftman.getString("name"));
@@ -93,6 +103,4 @@ public class Craftman extends SugarRecord{
             }
         return craftmen;
     }
-
-
 }

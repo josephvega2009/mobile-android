@@ -6,6 +6,7 @@ import com.androidnetworking.AndroidNetworking;
 
 import pe.com.mucontact.models.Craftman;
 import pe.com.mucontact.models.Reward;
+import pe.com.mucontact.models.User;
 import pe.com.mucontact.network.NewApiService;
 
 /**
@@ -46,5 +47,23 @@ public class MuContactApp extends Application {
 
     public Craftman getCurrentCraftman() {
         return newApiService.getCurrentCraftman();
+    }
+
+    public MuContactApp setCurrentUser(User user){
+        newApiService.setCurrentUser(user);
+        return this;
+    }
+
+    public User getCurrentUser() {
+        return newApiService.getCurrentUser();
+    }
+
+    public MuContactApp setCurrentToken(String token){
+        newApiService.setCurrentToken(token);
+        return this;
+    }
+
+    public String getCurrentToken() {
+        return newApiService.getCurrentToken();
     }
 }

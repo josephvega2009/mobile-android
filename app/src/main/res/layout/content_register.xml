@@ -11,16 +11,15 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/nameTextInputLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        >
+        app:layout_constraintTop_toTopOf="parent">
         <android.support.design.widget.TextInputEditText
             android:id="@+id/nameTextInputEditText"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="@string/name_hint"
             android:inputType="textPersonName" />
@@ -28,13 +27,12 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/emailTextInputLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/nameTextInputLayout"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/nameTextInputLayout">
         <android.support.design.widget.TextInputEditText
             android:id="@+id/emailTextInputEditText"
             android:layout_width="match_parent"
@@ -45,13 +43,12 @@
 
     <android.support.design.widget.TextInputLayout
         android:id="@+id/passwordTextInputLayout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout"
-        >
+        app:layout_constraintTop_toBottomOf="@+id/emailTextInputLayout">
         <android.support.design.widget.TextInputEditText
             android:id="@+id/passwordInputEditText"
             android:layout_width="match_parent"
@@ -65,10 +62,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="16dp"
-        android:text="Craftsman"
+        android:text="Craftman"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/passwordTextInputLayout"/>
 
     <CheckBox
         android:id="@+id/musicicancheckBox"
@@ -77,17 +73,27 @@
         android:layout_margin="16dp"
         android:text="Musician"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/craftmancheckBox"
-         />
+        app:layout_constraintTop_toBottomOf="@+id/craftmancheckBox"/>
+
     <Button
         android:id="@+id/registerButton"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/signUpButton"
         style="@style/Base.Widget.AppCompat.Button.Colored"
-        android:layout_marginTop="16dp"
+        android:layout_margin="16dp"
         app:layout_constraintTop_toBottomOf="@+id/musicicancheckBox" />
+
+    <TextView
+        android:id="@+id/signInTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="@string/signInTextView"
+        android:layout_margin="16dp"
+        app:layout_constraintTop_toBottomOf="@+id/registerButton" />
 
 </android.support.constraint.ConstraintLayout>

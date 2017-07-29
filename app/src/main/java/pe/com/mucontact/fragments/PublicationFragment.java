@@ -1,7 +1,9 @@
 package pe.com.mucontact.fragments;
 
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -21,7 +23,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 import java.util.List;
 
+import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
+import pe.com.mucontact.activities.AddPublicationActivity;
 import pe.com.mucontact.adapters.PublicationsAdapter;
 import pe.com.mucontact.models.Publication;
 import pe.com.mucontact.models.User;
@@ -35,6 +39,7 @@ public class PublicationFragment extends Fragment {
     private PublicationsAdapter publicationsAdapter;
     private RecyclerView.LayoutManager publicationsLayoutManager;
     private List<Publication> publications;
+    private FloatingActionButton addPublicationFloatingActionButton;
     private static String TAG = "MuContact";
     private User user;
 
@@ -53,13 +58,22 @@ public class PublicationFragment extends Fragment {
         publicationsLayoutManager = new LinearLayoutManager(view.getContext());
         publicationsRecyclerView.setAdapter(publicationsAdapter);
         publicationsRecyclerView.setLayoutManager(publicationsLayoutManager);
+        user = MuContactApp.getInstance().getCurrentUser();
         updatePublications();
+        addPublicationFloatingActionButton = (FloatingActionButton) view.findViewById(R.id.addPublicationFloatingActionButton);
+        addPublicationFloatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                v.getContext().startActivity(new Intent(v.getContext(), AddPublicationActivity.class));
+            }
+        });
         return view;
     }
 
     private void updatePublications() {
         AndroidNetworking
-                .get(NewApiService.PUBLICATION_URL)
+                .get(NewApiService.PUBLICATION_USER_URL)
+                .addPathParameter("user_id", user.get_id())
                 .setTag(TAG)
                 .setPriority(Priority.LOW)
                 .build()

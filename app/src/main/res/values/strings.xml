@@ -4,8 +4,13 @@
     <string name="name_hint">Complete Name</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
+    <string name="instrument_hint">Instrument</string>
+    <string name="description_hint">Description</string>
+    <string name="locationAt_hint">Lotation at</string>
     <string name="loginButton">Login</string>
-    <string name="signUpButton">Register</string>
+    <string name="signUpTextView">No account yet? Create one</string>
+    <string name="signInTextView">Already a member? Login</string>
+    <string name="signUpButton">Create account</string>
     <string name="rewardButton">I want it!</string>
     <string name="sendOrderButton">Send a Order</string>
     <string name="title_activity_main">MuContact!</string>
@@ -24,5 +29,6 @@
     <string name="instrument">Sample instrument</string>
     <string name="craftman">Sample craftman</string>
     <string name="title_activity_register">Register New Account</string>
+    <string name="title_activity_add_publication">Add Publication</string>
 
 </resources>

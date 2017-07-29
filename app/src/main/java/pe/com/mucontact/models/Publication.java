@@ -13,7 +13,8 @@ import java.util.List;
  * Created by romer on 26/6/2017.
  */
 
-public class Publication extends SugarRecord {
+public class Publication extends SugarRecord{
+    private String _id;
     private String instrument;
     private String description;
     private String locationReference;
@@ -24,13 +25,23 @@ public class Publication extends SugarRecord {
     public Publication() {
     }
 
-    public Publication(String instrument, String description, String locationReference, String createdAt, String craftmen, User user) {
+    public Publication(String _id, String instrument, String description, String locationReference, String createdAt, String craftmen, User user) {
+        this._id = _id;
         this.instrument = instrument;
         this.description = description;
         this.locationReference = locationReference;
         this.createdAt = createdAt;
         this.craftmen = craftmen;
         this.user = user;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public Publication set_id(String _id) {
+        this._id = _id;
+        return this;
     }
 
     public String getInstrument() {
@@ -88,7 +99,8 @@ public class Publication extends SugarRecord {
         if(jsonPublication == null) return null;
         Publication publication = new Publication();
         try {
-            publication.setInstrument(jsonPublication.getString("instrument"))
+            publication.set_id(jsonPublication.getString("_id"))
+                    .setInstrument(jsonPublication.getString("instrument"))
                     .setDescription(jsonPublication.getString("description"))
                     .setCreatedAt(jsonPublication.getString("date"))
                     .setLocationReference(jsonPublication.getString("locationAt"))
