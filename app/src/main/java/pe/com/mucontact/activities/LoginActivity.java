@@ -1,9 +1,9 @@
 package pe.com.mucontact.activities;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.util.Log;
 import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         emailEditText = (EditText) findViewById(R.id.emailTextInputEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordInputEditText);
         loginProgressBar = (ProgressBar) findViewById(R.id.loginProgressBar);
@@ -103,10 +104,10 @@ public class LoginActivity extends AppCompatActivity {
                             user = User.build(response.getJSONObject("user"));
                             MuContactApp.getInstance().setCurrentToken(token);
                             MuContactApp.getInstance().setCurrentUser(user);
+                            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP));
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
-                        startActivity(intent);
                         loginProgressBar.setVisibility(View.INVISIBLE);
                     }
                     @Override

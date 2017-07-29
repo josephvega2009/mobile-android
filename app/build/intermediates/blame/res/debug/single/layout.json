@@ -52,12 +52,12 @@
         "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\layout\\activity_about_craftman.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
-        "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
-    },
-    {
         "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_publication.xml",
         "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\src\\main\\res\\layout\\content_publication.xml"
+    },
+    {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_item_layout.xml",
+        "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout\\abc_popup_menu_item_layout.xml"
     },
     {
         "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_subheader.xml",
@@ -144,12 +144,12 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\layout\\abc_action_mode_close_item_material.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
-        "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\layout\\design_menu_item_action_area.xml"
-    },
-    {
         "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_popup_menu_header_item_layout.xml",
         "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\layout\\abc_popup_menu_header_item_layout.xml"
+    },
+    {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_menu_item_action_area.xml",
+        "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\layout\\design_menu_item_action_area.xml"
     },
     {
         "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_navigation_item_separator.xml",
@@ -222,6 +222,14 @@
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\design_bottom_sheet_dialog.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\layout\\design_bottom_sheet_dialog.xml"
+    },
+    {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\content_about_user.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\layout\\content_about_user.xml"
+    },
+    {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\activity_about_user.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\layout\\activity_about_user.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\layout\\abc_search_view.xml",

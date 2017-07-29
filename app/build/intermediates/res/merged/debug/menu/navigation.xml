@@ -15,5 +15,4 @@
         android:id="@+id/navigation_rewards"
         android:icon="@drawable/ic_card_giftcard_black_24dp"
         android:title="@string/title_rewards" />
-
 </menu>

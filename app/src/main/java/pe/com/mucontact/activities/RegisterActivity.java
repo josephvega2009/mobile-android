@@ -1,6 +1,7 @@
 package pe.com.mucontact.activities;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -23,6 +24,7 @@ public class RegisterActivity extends AppCompatActivity {
         setContentView(R.layout.activity_register);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         nameEditText = (EditText) findViewById(R.id.nameTextInputEditText);
         emailEditText = (EditText) findViewById(R.id.emailTextInputEditText);
         passwordEditText = (EditText) findViewById(R.id.passwordInputEditText);
@@ -32,9 +34,8 @@ public class RegisterActivity extends AppCompatActivity {
             public void onClick(View v) {
                 v.getContext()
                         .startActivity(new Intent(v.getContext(),
-                                LoginActivity.class));
+                                LoginActivity.class).addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP));
             }
         });
     }
-
 }
