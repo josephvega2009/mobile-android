@@ -1,14 +1,23 @@
 package pe.com.mucontact.adapters;
 
+import android.content.Context;
+import android.content.Intent;
+import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
 import android.view.LayoutInflater;
+import android.view.MenuInflater;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
+import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
+import pe.com.mucontact.activities.AddPublicationActivity;
 import pe.com.mucontact.models.Publication;
 
 /**
@@ -36,9 +45,17 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
             PublicationsAdapter.ViewHolder holder, int position) {
 
         holder.instrumentTextView.setText(publications.get(position).getInstrument());
-        holder.craftmenTextView.setText(publications.get(position).getCraftmen());
         holder.descriptionTextView.setText(publications.get(position).getDescription());
         holder.locationReferenceTextView.setText(publications.get(position).getContext());
+        holder.publicationConstraintLayout.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MuContactApp.getInstance().setCurrentPublication(publications.get(position));
+                v.getContext()
+                        .startActivity(new Intent(v.getContext(),
+                                AddPublicationActivity.class));
+            }
+        });
     }
 
     @Override
@@ -57,16 +74,15 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView instrumentTextView;
-        TextView craftmenTextView;
         TextView descriptionTextView;
         TextView locationReferenceTextView;
+        ConstraintLayout publicationConstraintLayout;
         public ViewHolder(View itemView) {
             super(itemView);
             instrumentTextView = (TextView) itemView.findViewById(R.id.instrumentTextView);
-            craftmenTextView = (TextView) itemView.findViewById(R.id.craftmenTextView);
             descriptionTextView = (TextView) itemView.findViewById(R.id.descriptionTextView);
             locationReferenceTextView = (TextView) itemView.findViewById(R.id.locationReferenceTextView);
+            publicationConstraintLayout = (ConstraintLayout) itemView.findViewById(R.id.publicationConstraintLayout);
         }
     }
-
 }

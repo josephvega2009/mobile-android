@@ -29,6 +29,7 @@ import java.util.Date;
 
 import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
+import pe.com.mucontact.models.Publication;
 import pe.com.mucontact.models.User;
 import pe.com.mucontact.network.NewApiService;
 
@@ -40,6 +41,7 @@ public class AddPublicationActivity extends AppCompatActivity {
     private EditText descriptionEditText;
     private EditText locationAtEditText;
     User user;
+    Publication publication;
     String TAG = "MuContact";
 
     @Override
@@ -53,6 +55,12 @@ public class AddPublicationActivity extends AppCompatActivity {
         descriptionEditText = (EditText) findViewById( R.id.descriptionInputEditText);
         locationAtEditText = (EditText) findViewById( R.id.locationAtInputEditText);
         user = MuContactApp.getInstance().getCurrentUser();
+        publication = MuContactApp.getInstance().getCurrentPublication();
+        if( publication != null) {
+            instrumentEditText.setText(MuContactApp.getInstance().getCurrentPublication().getInstrument());
+            descriptionEditText.setText(MuContactApp.getInstance().getCurrentPublication().getDescription());
+            locationAtEditText.setText(MuContactApp.getInstance().getCurrentPublication().getLocationReference());
+        }
 
         file.mkdirs();
         camaraButton = (Button) findViewById(R.id.camaraButton);
@@ -78,7 +86,11 @@ public class AddPublicationActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                savePublication();
+                if( publication != null) {
+                    editPublication();
+                } else {
+                    savePublication();
+                }
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -99,7 +111,7 @@ public class AddPublicationActivity extends AppCompatActivity {
                 .addBodyParameter("instrument", instrumentEditText.getText().toString())
                 .addBodyParameter("description", descriptionEditText.getText().toString())
                 .addBodyParameter("locationAt", locationAtEditText.getText().toString())
-                .addBodyParameter("user", "596815cee413250004077676")
+                .addBodyParameter("user", user.get_id())
                 .setTag(TAG)
                 .setPriority(Priority.MEDIUM)
                 .build()
@@ -115,4 +127,25 @@ public class AddPublicationActivity extends AppCompatActivity {
                 });
     }
 
+    private void editPublication() {
+        AndroidNetworking.put(NewApiService.PUBLICATION_EDIT_URL)
+                .addBodyParameter("instrument", instrumentEditText.getText().toString())
+                .addBodyParameter("description", descriptionEditText.getText().toString())
+                .addBodyParameter("locationAt", locationAtEditText.getText().toString())
+                .addBodyParameter("user", user.get_id())
+                .addPathParameter("publication_id", publication.get_id())
+                .setTag(TAG)
+                .setPriority(Priority.MEDIUM)
+                .build()
+                .getAsJSONObject(new JSONObjectRequestListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        Toast.makeText(getApplicationContext(), "Publication save", Toast.LENGTH_SHORT).show();
+                    }
+                    @Override
+                    public void onError(ANError error) {
+                        Toast.makeText(getApplicationContext(), "Failed to save publication", Toast.LENGTH_SHORT).show();
+                    }
+                });
+    }
 }

@@ -6,11 +6,13 @@ import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
+import android.support.v7.widget.RecyclerView;
+import android.view.ContextMenu;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
+import android.widget.Toast;
 
 import pe.com.mucontact.R;
 import pe.com.mucontact.fragments.HomeFragment;
@@ -67,12 +69,13 @@ public class MainActivity extends AppCompatActivity {
     public boolean onOptionsItemSelected(MenuItem item) {
         switch (item.getItemId()) {
             case R.id.action_profile:
-                Intent intent = new Intent (getBaseContext(), AboutUserActivity.class);
+                Intent intent = new Intent (getApplicationContext(), AboutUserActivity.class);
                 startActivity(intent);
-                break;
+                return true;
             case R.id.action_settings:
-                break;
+                return true;
+            default:
+                return super.onContextItemSelected(item);
         }
-        return true;
     }
 }

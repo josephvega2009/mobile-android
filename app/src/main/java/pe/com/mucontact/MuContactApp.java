@@ -5,6 +5,7 @@ import android.app.Application;
 import com.androidnetworking.AndroidNetworking;
 
 import pe.com.mucontact.models.Craftman;
+import pe.com.mucontact.models.Publication;
 import pe.com.mucontact.models.Reward;
 import pe.com.mucontact.models.User;
 import pe.com.mucontact.network.NewApiService;
@@ -65,5 +66,14 @@ public class MuContactApp extends Application {
 
     public String getCurrentToken() {
         return newApiService.getCurrentToken();
+    }
+
+    public MuContactApp setCurrentPublication(Publication publication){
+        newApiService.setCurrentPublication(publication);
+        return this;
+    }
+
+    public Publication getCurrentPublication() {
+        return newApiService.getCurrentPublication();
     }
 }
