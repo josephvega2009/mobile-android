@@ -80,7 +80,15 @@ public class AddPublicationActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                savePublication();
+                if(instrumentEditText.getText().toString().isEmpty()
+                        || descriptionEditText.getText().toString().isEmpty()
+                        || locationAtEditText.getText().toString().isEmpty())
+                {
+                    Toast.makeText(getApplicationContext(), "Fill empty fields", Toast.LENGTH_SHORT).show();
+                }
+                else{
+                    savePublication();
+                }
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
