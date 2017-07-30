@@ -4,16 +4,16 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     },
     {
-        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_edit_black_24dp.xml",
-        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_edit_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
-        "source": "C:\\Users\\Franklin\\.android\\build-cache\\117da7eb90c668fb997e877485d49c20cbfbd67c\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_delete_white_24dp.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_delete_white_24dp.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_add_white_24dp.xml",
         "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_add_white_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_edit_white_24dp.xml",
+        "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_edit_white_24dp.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_check_white_24dp.xml",
@@ -32,27 +32,11 @@
         "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_person_white_24dp.xml"
     },
     {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml",
-        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml",
-        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_home_black_24dp.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility_off.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml",
         "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_card_giftcard_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_public_black_24dp.xml",
-        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_public_black_24dp.xml"
-    },
-    {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\design_ic_visibility.xml",
-        "source": "C:\\Users\\Franklin\\.android\\build-cache\\117da7eb90c668fb997e877485d49c20cbfbd67c\\output\\res\\drawable-anydpi-v21\\design_ic_visibility.xml"
     }
 ]

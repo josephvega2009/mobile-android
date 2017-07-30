@@ -93,7 +93,7 @@ public class LoginActivity extends AppCompatActivity {
                 .addBodyParameter("email", email)
                 .addBodyParameter("password", password)
                 .setTag(TAG)
-                .setPriority(Priority.MEDIUM)
+                .setPriority(Priority.HIGH)
                 .build()
                 .getAsJSONObject(new JSONObjectRequestListener() {
                     @Override

@@ -56,11 +56,6 @@ public class AddPublicationActivity extends AppCompatActivity {
         locationAtEditText = (EditText) findViewById( R.id.locationAtInputEditText);
         user = MuContactApp.getInstance().getCurrentUser();
         publication = MuContactApp.getInstance().getCurrentPublication();
-        if( publication != null) {
-            instrumentEditText.setText(MuContactApp.getInstance().getCurrentPublication().getInstrument());
-            descriptionEditText.setText(MuContactApp.getInstance().getCurrentPublication().getDescription());
-            locationAtEditText.setText(MuContactApp.getInstance().getCurrentPublication().getLocationReference());
-        }
 
         file.mkdirs();
         camaraButton = (Button) findViewById(R.id.camaraButton);
@@ -78,7 +73,6 @@ public class AddPublicationActivity extends AppCompatActivity {
                 Intent cameraIntent = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
                 cameraIntent.putExtra(MediaStore.EXTRA_OUTPUT, uri);
                 startActivityForResult(cameraIntent, 0);
-
             }
         });
 
@@ -86,16 +80,10 @@ public class AddPublicationActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                if( publication != null) {
-                    editPublication();
-                } else {
-                    savePublication();
-                }
+                savePublication();
             }
         });
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
-
     }
 
     @SuppressLint("SimpleDateFormat")
@@ -119,28 +107,7 @@ public class AddPublicationActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(JSONObject response) {
                         Toast.makeText(getApplicationContext(), "Publication save", Toast.LENGTH_SHORT).show();
-                    }
-                    @Override
-                    public void onError(ANError error) {
-                        Toast.makeText(getApplicationContext(), "Failed to save publication", Toast.LENGTH_SHORT).show();
-                    }
-                });
-    }
-
-    private void editPublication() {
-        AndroidNetworking.put(NewApiService.PUBLICATION_EDIT_URL)
-                .addBodyParameter("instrument", instrumentEditText.getText().toString())
-                .addBodyParameter("description", descriptionEditText.getText().toString())
-                .addBodyParameter("locationAt", locationAtEditText.getText().toString())
-                .addBodyParameter("user", user.get_id())
-                .addPathParameter("publication_id", publication.get_id())
-                .setTag(TAG)
-                .setPriority(Priority.MEDIUM)
-                .build()
-                .getAsJSONObject(new JSONObjectRequestListener() {
-                    @Override
-                    public void onResponse(JSONObject response) {
-                        Toast.makeText(getApplicationContext(), "Publication save", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
                     @Override
                     public void onError(ANError error) {

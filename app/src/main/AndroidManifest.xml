@@ -72,6 +72,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pe.com.mucontact.activities.MainActivity" />
         </activity>
+        <activity
+            android:name=".activities.EditPublicationActivity"
+            android:label="@string/title_activity_edit_publication"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pe.com.mucontact.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>

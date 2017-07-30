@@ -1,9 +1,5 @@
 [
     {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
-        "source": "C:\\Users\\Franklin\\.android\\build-cache\\117da7eb90c668fb997e877485d49c20cbfbd67c\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\animator-v21\\design_appbar_state_list_animator.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\animator-v21\\design_appbar_state_list_animator.xml"
     }

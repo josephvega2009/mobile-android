@@ -1,23 +1,18 @@
 package pe.com.mucontact.adapters;
 
-import android.content.Context;
 import android.content.Intent;
 import android.support.constraint.ConstraintLayout;
 import android.support.v7.widget.RecyclerView;
-import android.view.ContextMenu;
 import android.view.LayoutInflater;
-import android.view.MenuInflater;
-import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.List;
 
 import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
-import pe.com.mucontact.activities.AddPublicationActivity;
+import pe.com.mucontact.activities.EditPublicationActivity;
 import pe.com.mucontact.models.Publication;
 
 /**
@@ -53,7 +48,7 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
                 MuContactApp.getInstance().setCurrentPublication(publications.get(position));
                 v.getContext()
                         .startActivity(new Intent(v.getContext(),
-                                AddPublicationActivity.class));
+                                EditPublicationActivity.class));
             }
         });
     }
