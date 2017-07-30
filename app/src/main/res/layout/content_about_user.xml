@@ -41,13 +41,13 @@
         android:text="Sample Email"/>
 
     <TextView
-        android:id="@+id/pointsTextView"
+        android:id="@+id/userTypeTextView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:layout_constraintTop_toBottomOf="@+id/emailTextView"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_margin="8dp"
-        android:text="Sample Points"/>
+        android:text="Sample User Type"/>
 
 </android.support.constraint.ConstraintLayout>

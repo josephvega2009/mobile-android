@@ -895,7 +895,6 @@ int id passwordTextInputLayout 0x7f0d0098
 int id phoneTextView 0x7f0d0085
 int id pictureANImageView 0x7f0d0081
 int id pin 0x7f0d0039
-int id pointsTextView 0x7f0d008c
 int id progress_circular 0x7f0d0006
 int id progress_horizontal 0x7f0d0007
 int id publicationConstraintLayout 0x7f0d009c
@@ -967,6 +966,7 @@ int id transition_current_scene 0x7f0d000b
 int id transition_scene_layoutid_cache 0x7f0d000c
 int id up 0x7f0d000d
 int id useLogo 0x7f0d0020
+int id userTypeTextView 0x7f0d008c
 int id valueTextView 0x7f0d0088
 int id view_offset_helper 0x7f0d000e
 int id visible 0x7f0d00cb
