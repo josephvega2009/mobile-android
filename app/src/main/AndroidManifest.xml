@@ -81,6 +81,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pe.com.mucontact.activities.MainActivity" />
         </activity>
+        <activity android:name=".activities.EditUserActivity"></activity>
     </application>
 
 </manifest>

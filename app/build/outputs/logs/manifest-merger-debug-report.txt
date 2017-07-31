@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:2:1-86:12
+ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:2:1-87:12
 	package
 		ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:3:5-31
 		INJECTED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml
@@ -26,7 +26,7 @@ ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidMa
 	android:name
 		ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:7:22-78
 application
-ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:9:5-84:19
+ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:9:5-85:19
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\INTEL\.android\build-cache\07f62e76b085dbb847149a6c1596341abd139916\output\AndroidManifest.xml:9:5-20
 MERGED from [com.android.support:design:25.3.1] C:\Users\INTEL\.android\build-cache\982c9ccfdb8f076176327f16a1c921136c60c1ac\output\AndroidManifest.xml:29:5-20
 MERGED from [com.android.support:appcompat-v7:25.3.1] C:\Users\INTEL\.android\build-cache\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\output\AndroidManifest.xml:29:5-20
@@ -144,6 +144,10 @@ ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidMa
 		ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:79:13-56
 	android:name
 		ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:76:13-63
+activity#pe.com.mucontact.activities.EditUserActivity
+ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:84:9-74
+	android:name
+		ADDED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml:84:19-62
 uses-sdk
 INJECTED from C:\Users\INTEL\Documents\GitHub\mobile-android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 MERGED from [com.android.support.constraint:constraint-layout:1.0.2] C:\Users\INTEL\.android\build-cache\07f62e76b085dbb847149a6c1596341abd139916\output\AndroidManifest.xml:5:5-7:41

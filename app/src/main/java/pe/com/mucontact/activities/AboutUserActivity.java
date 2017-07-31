@@ -1,11 +1,14 @@
 package pe.com.mucontact.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
 
 import pe.com.mucontact.MuContactApp;
@@ -16,6 +19,7 @@ public class AboutUserActivity extends AppCompatActivity {
     private TextView displayNameTextView;
     private TextView emailTextView;
     private TextView userTypeTextView;
+    private FloatingActionButton editUserFloatingActionButton;
     User user;
 
     @Override
@@ -34,6 +38,18 @@ public class AboutUserActivity extends AppCompatActivity {
         displayNameTextView.setText(user.getDisplayName());
         emailTextView.setText(user.getEmail());
         userTypeTextView.setText(user.getUserType());
+
+
+        editUserFloatingActionButton = (FloatingActionButton) findViewById(R.id.editUserFloatingActionButton);
+        editUserFloatingActionButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MuContactApp.getInstance().setCurrentUser(user);
+                v.getContext()
+                        .startActivity(new Intent(v.getContext(),
+                                EditUserActivity.class));
+            }
+        });
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
