@@ -16,18 +16,18 @@ public class Craftman{
     private String level;
     private String phone;
     private String description;
-    private String name;
+    private User user;
 
 
     public Craftman() {
     }
 
-    public Craftman(String _id, String level, String phone, String description, String name) {
+    public Craftman(String _id, String level, String phone, String description, User user) {
         this._id = _id;
         this.phone = level;
         this.level = phone;
         this.description = description;
-        this.name = name;
+        this.user = user;
     }
 
     public String get_id() {
@@ -66,16 +66,16 @@ public class Craftman{
         return this;
     }
 
-    public String getName() {
-        return name;
+    public User getUser() {
+        return user;
     }
 
-    public Craftman setName(String name) {
-        this.name = name;
+    public Craftman setUser(User user) {
+        this.user = user;
         return this;
     }
 
-    public static Craftman build(JSONObject jsonCraftman) {
+    public static Craftman build(JSONObject jsonCraftman, User user) {
         if(jsonCraftman == null) return null;
         Craftman craftman = new Craftman();
         try {
@@ -83,7 +83,7 @@ public class Craftman{
                     .setLevel(jsonCraftman.getString("level"))
                     .setPhone(jsonCraftman.getString("phone"))
                     .setDescription(jsonCraftman.getString("description"))
-                    .setName(jsonCraftman.getString("name"));
+                    .setUser(user.build(jsonCraftman.getJSONObject("user")));
             return craftman;
         } catch (JSONException e) {
             e.printStackTrace();
@@ -91,13 +91,13 @@ public class Craftman{
         return null;
     }
 
-    public static List<Craftman> build(JSONArray jsonCraftman) {
+    public static List<Craftman> build(JSONArray jsonCraftman, User user) {
         if(jsonCraftman == null) return null;
         int length = jsonCraftman.length();
         List<Craftman> craftmen = new ArrayList<>();
         for(int i = 0; i < length; i++)
             try {
-                craftmen.add(Craftman.build(jsonCraftman.getJSONObject(i)));
+                craftmen.add(Craftman.build(jsonCraftman.getJSONObject(i), user));
             } catch (JSONException e) {
                 e.printStackTrace();
             }

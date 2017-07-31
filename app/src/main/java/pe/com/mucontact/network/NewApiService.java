@@ -16,7 +16,6 @@ public class NewApiService {
     public static String REWARD_URL = "https://mucontact.herokuapp.com/api/reward";
     public static String PUBLICATION_URL = "https://mucontact.herokuapp.com/api/publication";
     public static String PUBLICATION_EDIT_URL = "https://mucontact.herokuapp.com/api/publication/{publication_id}";
-    public static String USER_EDIT_URL = "https://mucontact.herokuapp.com/api/user/{user_id}";
     public static String PUBLICATION_USER_URL = "https://mucontact.herokuapp.com/api/publication/user/{user_id}";
     public static String CRAFTMAN_URL = "https://mucontact.herokuapp.com/api/craftman";
     private Reward currentReward;

@@ -34,7 +34,7 @@ public class AboutCraftmanActivity extends AppCompatActivity {
         levelTextView = (TextView) findViewById(R.id.levelTextView);
         craftman = MuContactApp.getInstance().getCurrentCraftman();
 
-        nameTextView.setText(craftman.getName());
+        nameTextView.setText(craftman.getUser().getDisplayName());
         descriptionTextView.setText(craftman.getDescription());
         phoneTextView.setText(craftman.getPhone());
         levelTextView.setText(craftman.getLevel());

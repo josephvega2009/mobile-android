@@ -2,7 +2,6 @@
     <string name="app_name">MuContact</string>
 
     <string name="name_hint">Complete Name</string>
-    <string name="displayName">Name</string>
     <string name="email_hint">Email</string>
     <string name="password_hint">Password</string>
     <string name="instrument_hint">Instrument</string>

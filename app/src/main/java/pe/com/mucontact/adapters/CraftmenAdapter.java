@@ -37,7 +37,7 @@ public class CraftmenAdapter extends RecyclerView.Adapter<CraftmenAdapter.ViewHo
     @Override
     public void onBindViewHolder(
             CraftmenAdapter.ViewHolder holder, int  position) {
-        holder.nameTextView.setText(craftmen.get(position).getName());
+        holder.nameTextView.setText(craftmen.get(position).getUser().getDisplayName());
         holder.descriptionTextView.setText(craftmen.get(position).getDescription());
         holder.phoneTextView.setText(craftmen.get(position).getPhone());
         holder.levelTextView.setText(craftmen.get(position).getLevel());

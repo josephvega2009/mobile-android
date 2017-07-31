@@ -24,6 +24,7 @@ import java.util.List;
 import pe.com.mucontact.R;
 import pe.com.mucontact.adapters.CraftmenAdapter;
 import pe.com.mucontact.models.Craftman;
+import pe.com.mucontact.models.User;
 import pe.com.mucontact.network.NewApiService;
 
 /**
@@ -35,6 +36,7 @@ public class HomeFragment extends Fragment {
     private RecyclerView.LayoutManager craftmanLayoutManager;
     private List<Craftman> craftmen;
     private static String TAG = "MuContact";
+    private User user;
 
     public HomeFragment() {
         // Required empty public constructor
@@ -65,7 +67,7 @@ public class HomeFragment extends Fragment {
                     public void onResponse(JSONObject response) {
                         if(response == null) return;
                         try {
-                            craftmen = Craftman.build(response.getJSONArray("craftmen"));
+                            craftmen = Craftman.build(response.getJSONArray("craftmen"), user);
                             Log.d(TAG, "Found Craftmen: " + String.valueOf(craftmen.size()));
                             craftmanAdapter.setCraftmen(craftmen);
                             craftmanAdapter.notifyDataSetChanged();

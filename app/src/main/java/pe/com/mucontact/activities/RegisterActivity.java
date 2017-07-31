@@ -62,7 +62,7 @@ public class RegisterActivity extends AppCompatActivity {
                 .addBodyParameter("email", emailEditText.getText().toString())
                 .addBodyParameter("displayName", nameEditText.getText().toString())
                 .addBodyParameter("password",passwordEditText.getText().toString())
-                .addBodyParameter("userType", "Craftmen")
+                .addBodyParameter("userType", "Musician")
                 .addBodyParameter("password", passwordEditText.getText().toString())
                 .setTag(TAG)
                 .setPriority(Priority.MEDIUM)

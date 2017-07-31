@@ -65,6 +65,7 @@ public class PublicationFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 v.getContext().startActivity(new Intent(v.getContext(), AddPublicationActivity.class));
+                onStop();
             }
         });
         return view;
@@ -95,5 +96,11 @@ public class PublicationFragment extends Fragment {
                         Log.d(TAG, anError.getMessage());
                     }
                 });
+    }
+
+    @Override
+    public void onResume() {
+        super.onResume();
+        updatePublications();
     }
 }
