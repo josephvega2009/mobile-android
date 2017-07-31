@@ -27,7 +27,7 @@ public class AboutUserActivity extends AppCompatActivity {
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
         displayNameTextView = (TextView) findViewById(R.id.displayNameTextView);
-        emailTextView = (TextView) findViewById(R.id.emailTextInputEditText);
+        emailTextView = (TextView) findViewById(R.id.emailTextView);
         userTypeTextView = (TextView) findViewById(R.id.userTypeTextView);
         user = MuContactApp.getInstance().getCurrentUser();
 
