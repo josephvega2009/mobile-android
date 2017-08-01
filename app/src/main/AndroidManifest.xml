@@ -81,6 +81,24 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pe.com.mucontact.activities.MainActivity" />
         </activity>
+        <activity
+            android:name=".activities.EditUserProfileActivity"
+            android:label="@string/title_activity_edit_user_profile"
+            android:parentActivityName=".activities.AboutUserActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pe.com.mucontact.activities.AboutUserActivity" />
+        </activity>
+        <activity
+            android:name=".activities.CreateContractActivity"
+            android:label="@string/title_activity_create_contract"
+            android:parentActivityName=".activities.AboutCraftmanActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pe.com.mucontact.activities.AboutCraftmanActivity" />
+        </activity>
     </application>
 
 </manifest>

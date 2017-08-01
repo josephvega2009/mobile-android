@@ -36,7 +36,9 @@
     <string name="action_profile">Profile</string>
     <string name="action_edit">Edit</string>
     <string name="action_delete">Delete</string>
-    <string name="title_activity_about_user">About User</string>
+    <string name="title_activity_about_user">About Me</string>
     <string name="title_activity_edit_publication">"Edit Publication "</string>
+    <string name="title_activity_edit_user_profile">EditUserProfileActivity</string>
+    <string name="title_activity_create_contract">CreateContractActivity</string>
 
 </resources>

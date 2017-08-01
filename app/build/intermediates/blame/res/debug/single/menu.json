@@ -1,5 +1,9 @@
 [
     {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\floating_context_menu.xml",
+        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\src\\main\\res\\menu\\floating_context_menu.xml"
+    },
+    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation.xml",
         "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\menu\\navigation.xml"
     },
@@ -14,6 +18,14 @@
     {
         "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_sources.xml",
         "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\src\\main\\res\\menu\\menu_sources.xml"
+    },
+    {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_publication_sources.xml",
+        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\src\\main\\res\\menu\\menu_publication_sources.xml"
+    },
+    {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_profile_sources.xml",
+        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\src\\main\\res\\menu\\menu_profile_sources.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_sources.xml",
@@ -34,6 +46,14 @@
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_profile_sources.xml",
         "source": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\src\\main\\res\\menu\\menu_profile_sources.xml"
+    },
+    {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_sources.xml",
+        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\src\\main\\res\\menu\\menu_sources.xml"
+    },
+    {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\menu\\navigation.xml",
+        "source": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\src\\main\\res\\menu\\navigation.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\menu\\menu_publication_sources.xml",

@@ -1,8 +1,11 @@
 package pe.com.mucontact.activities;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 
 import pe.com.mucontact.MuContactApp;
@@ -18,6 +21,7 @@ public class AboutCraftmanActivity extends AppCompatActivity {
     private TextView descriptionTextView;
     private TextView phoneTextView;
     private TextView levelTextView;
+    private Button sendOrderButton;
     Craftman craftman;
 
     @Override
@@ -38,5 +42,14 @@ public class AboutCraftmanActivity extends AppCompatActivity {
         descriptionTextView.setText(craftman.getDescription());
         phoneTextView.setText(craftman.getPhone());
         levelTextView.setText(craftman.getLevel());
+
+        sendOrderButton = (Button) findViewById(R.id.sendOrderButton);
+        sendOrderButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), CreateContractActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 }
