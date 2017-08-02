@@ -20,8 +20,11 @@ import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import org.json.JSONException;
 import org.json.JSONObject;
 
+import java.util.List;
+
 import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
+import pe.com.mucontact.models.Musician;
 import pe.com.mucontact.models.User;
 import pe.com.mucontact.network.NewApiService;
 
@@ -38,6 +41,7 @@ public class LoginActivity extends AppCompatActivity {
     ProgressBar loginProgressBar;
     User user;
     String token;
+    List<Musician> musicians;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -105,6 +109,7 @@ public class LoginActivity extends AppCompatActivity {
                             MuContactApp.getInstance().setCurrentToken(token);
                             MuContactApp.getInstance().setCurrentUser(user);
                             startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP));
+                            updateMusician();
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
@@ -114,6 +119,31 @@ public class LoginActivity extends AppCompatActivity {
                     public void onError(ANError error) {
                         Toast.makeText(getApplicationContext(), "User or password incorrect", Toast.LENGTH_SHORT).show();
                         loginProgressBar.setVisibility(View.INVISIBLE);
+                    }
+                });
+    }
+
+    private void updateMusician() {
+        AndroidNetworking.get(NewApiService.MUSICIAN_USER_URL)
+                .addPathParameter("user_id", user.get_id())
+                .setTag(TAG)
+                .setPriority(Priority.MEDIUM)
+                .build()
+                .getAsJSONObject(new JSONObjectRequestListener() {
+                    @Override
+                    public void onResponse(JSONObject response) {
+                        if(response == null) return;
+                        try {
+                            musicians = Musician.build(response.getJSONArray("musician"), user);
+                            MuContactApp.getInstance().setCurrentMusician(musicians.get(0));
+                        } catch (JSONException e) {
+                            e.printStackTrace();
+                        }
+                    }
+                    @Override
+                    public void onError(ANError error) {
+                        Toast.makeText(getApplicationContext(), "Error in musician profile", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
                 });
     }

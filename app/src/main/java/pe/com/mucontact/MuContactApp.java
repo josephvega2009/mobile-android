@@ -5,6 +5,7 @@ import android.app.Application;
 import com.androidnetworking.AndroidNetworking;
 
 import pe.com.mucontact.models.Craftman;
+import pe.com.mucontact.models.Musician;
 import pe.com.mucontact.models.Publication;
 import pe.com.mucontact.models.Reward;
 import pe.com.mucontact.models.User;
@@ -75,5 +76,14 @@ public class MuContactApp extends Application {
 
     public Publication getCurrentPublication() {
         return newApiService.getCurrentPublication();
+    }
+
+    public MuContactApp setCurrentMusician(Musician musician){
+        newApiService.setCurrentMusician(musician);
+        return this;
+    }
+
+    public Musician getCurrentMusician() {
+        return newApiService.getCurrentMusician();
     }
 }

@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.androidnetworking.widget.ANImageView;
+
 import java.util.List;
 
 import pe.com.mucontact.MuContactApp;
@@ -39,8 +41,9 @@ public class CraftmenAdapter extends RecyclerView.Adapter<CraftmenAdapter.ViewHo
             CraftmenAdapter.ViewHolder holder, int  position) {
         holder.nameTextView.setText(craftmen.get(position).getUser().getDisplayName());
         holder.descriptionTextView.setText(craftmen.get(position).getDescription());
-        holder.phoneTextView.setText(craftmen.get(position).getPhone());
-        holder.levelTextView.setText(craftmen.get(position).getLevel());
+        holder.photoANImageView.setErrorImageResId(R.mipmap.ic_launcher);
+        holder.photoANImageView.setDefaultImageResId(R.mipmap.ic_launcher);
+        //holder.logoANImageView.setImageUrl(sources.get(position).getUrlToSmallLogo());
         holder.craftmanConstraintLayout.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -68,15 +71,13 @@ public class CraftmenAdapter extends RecyclerView.Adapter<CraftmenAdapter.ViewHo
     public class ViewHolder extends RecyclerView.ViewHolder {
         TextView nameTextView;
         TextView descriptionTextView;
-        TextView phoneTextView;
-        TextView levelTextView;
+        ANImageView photoANImageView;
         ConstraintLayout craftmanConstraintLayout;
         public ViewHolder(View itemView) {
             super(itemView);
             nameTextView = (TextView) itemView.findViewById(R.id.nameTextView);
             descriptionTextView = (TextView) itemView.findViewById(R.id.descriptionTextView);
-            phoneTextView = (TextView) itemView.findViewById(R.id.phoneTextView);
-            levelTextView = (TextView) itemView.findViewById(R.id.levelTextView);
+            photoANImageView = (ANImageView) itemView.findViewById(R.id.photoANImageView);
             craftmanConstraintLayout = (ConstraintLayout) itemView.findViewById(R.id.craftmanConstraintLayout);
         }
     }

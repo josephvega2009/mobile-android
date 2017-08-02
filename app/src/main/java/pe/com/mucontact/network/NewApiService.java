@@ -1,6 +1,9 @@
 package pe.com.mucontact.network;
 
+import java.net.MulticastSocket;
+
 import pe.com.mucontact.models.Craftman;
+import pe.com.mucontact.models.Musician;
 import pe.com.mucontact.models.Publication;
 import pe.com.mucontact.models.Reward;
 import pe.com.mucontact.models.User;
@@ -14,6 +17,7 @@ public class NewApiService {
     public static String SIGNUP_URL = "https://mucontact.herokuapp.com/api/signup";
     public static String SIGNIN_URL = "https://mucontact.herokuapp.com/api/signin";
     public static String REWARD_URL = "https://mucontact.herokuapp.com/api/reward";
+    public static String MUSICIAN_USER_URL = "https://mucontact.herokuapp.com/api/musician/user/{user_id}";
     public static String PUBLICATION_URL = "https://mucontact.herokuapp.com/api/publication";
     public static String PUBLICATION_EDIT_URL = "https://mucontact.herokuapp.com/api/publication/{publication_id}";
     public static String PUBLICATION_USER_URL = "https://mucontact.herokuapp.com/api/publication/user/{user_id}";
@@ -25,6 +29,7 @@ public class NewApiService {
     private User currentUser;
     private String currentToken;
     private Publication currentPublication;
+    private Musician currentMusician;
 
     public Reward getCurrentReward() {
         return currentReward;
@@ -68,6 +73,15 @@ public class NewApiService {
 
     public NewApiService setCurrentPublication(Publication currentPublication){
         this.currentPublication = currentPublication;
+        return this;
+    }
+
+    public Musician getCurrentMusician() {
+        return currentMusician;
+    }
+
+    public NewApiService setCurrentMusician(Musician currentMusician){
+        this.currentMusician = currentMusician;
         return this;
     }
 }

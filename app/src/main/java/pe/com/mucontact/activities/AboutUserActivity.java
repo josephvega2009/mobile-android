@@ -7,17 +7,38 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
 import android.widget.TextView;
+import android.widget.Toast;
+
+import com.androidnetworking.AndroidNetworking;
+import com.androidnetworking.common.Priority;
+import com.androidnetworking.error.ANError;
+import com.androidnetworking.interfaces.JSONObjectRequestListener;
+import com.androidnetworking.widget.ANImageView;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.util.List;
 
 import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
+import pe.com.mucontact.models.Musician;
 import pe.com.mucontact.models.User;
+import pe.com.mucontact.network.NewApiService;
 
 public class AboutUserActivity extends AppCompatActivity {
+    private ANImageView photoANImageView;
     private TextView displayNameTextView;
     private TextView emailTextView;
     private TextView userTypeTextView;
+    private TextView phoneTextView;
+    private TextView genderTextView;
+    private TextView birthDateTextView;
     User user;
+    Musician musician;
+    String TAG = "MuContact";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,14 +48,27 @@ public class AboutUserActivity extends AppCompatActivity {
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
 
+        user = MuContactApp.getInstance().getCurrentUser();
+
+        musician = MuContactApp.getInstance().getCurrentMusician();
+
+        photoANImageView = (ANImageView) findViewById(R.id.photoANImageView);
         displayNameTextView = (TextView) findViewById(R.id.displayNameTextView);
         emailTextView = (TextView) findViewById(R.id.emailTextView);
         userTypeTextView = (TextView) findViewById(R.id.userTypeTextView);
-        user = MuContactApp.getInstance().getCurrentUser();
+        phoneTextView = (TextView) findViewById(R.id.phoneTextView);
+        genderTextView = (TextView) findViewById(R.id.genderTextView);
+        birthDateTextView = (TextView) findViewById(R.id.birthDateTextView);
 
+        photoANImageView.setErrorImageResId(R.mipmap.ic_launcher);
+        photoANImageView.setDefaultImageResId(R.mipmap.ic_launcher);
+        //photoANImageView.setImageUrl(sources.get(position).getUrlToSmallLogo());
         displayNameTextView.setText(user.getDisplayName());
         emailTextView.setText(user.getEmail());
         userTypeTextView.setText(user.getUserType());
+        phoneTextView.setText((musician.getPhone()));
+        genderTextView.setText(musician.getGender());
+        birthDateTextView.setText(musician.getBirthDate());
     }
 
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -49,9 +83,10 @@ public class AboutUserActivity extends AppCompatActivity {
             case R.id.action_profile:
                 return true;
             default:
-                Intent intent = new Intent (getApplicationContext(), EditUserProfileActivity.class);
+                Intent intent = new Intent(getApplicationContext(), EditUserProfileActivity.class);
                 startActivity(intent);
                 return super.onContextItemSelected(item);
         }
     }
+
 }
