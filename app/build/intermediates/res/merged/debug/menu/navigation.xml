@@ -1,22 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <item
         android:id="@+id/navigation_home"
         android:icon="@drawable/ic_home_black_24dp"
-        android:title="@string/title_home" />
+        android:title="@string/title_home"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_publications"
         android:icon="@drawable/ic_public_black_24dp"
-        android:title="@string/title_publications" />
+        android:title="@string/title_publications"
+        app:showAsAction="ifRoom"/>
 
     <item
         android:id="@+id/navigation_rewards"
         android:icon="@drawable/ic_card_giftcard_black_24dp"
-        android:title="@string/title_rewards" />
+        android:title="@string/title_rewards"
+        app:showAsAction="ifRoom"/>
     <item
         android:id="@+id/navigation_contracts"
         android:icon="@drawable/ic_library_books_black_24dp"
-        android:title="@string/contracts"/>
+        android:title="@string/contracts"
+        app:showAsAction="ifRoom"/>
 </menu>

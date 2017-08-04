@@ -7,26 +7,13 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
-import android.view.View;
 import android.widget.TextView;
-import android.widget.Toast;
-
-import com.androidnetworking.AndroidNetworking;
-import com.androidnetworking.common.Priority;
-import com.androidnetworking.error.ANError;
-import com.androidnetworking.interfaces.JSONObjectRequestListener;
 import com.androidnetworking.widget.ANImageView;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.util.List;
 
 import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
 import pe.com.mucontact.models.Musician;
 import pe.com.mucontact.models.User;
-import pe.com.mucontact.network.NewApiService;
 
 public class AboutUserActivity extends AppCompatActivity {
     private ANImageView photoANImageView;
@@ -85,6 +72,7 @@ public class AboutUserActivity extends AppCompatActivity {
             default:
                 Intent intent = new Intent(getApplicationContext(), EditUserProfileActivity.class);
                 startActivity(intent);
+                finish();
                 return super.onContextItemSelected(item);
         }
     }

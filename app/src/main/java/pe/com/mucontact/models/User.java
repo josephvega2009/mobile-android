@@ -16,6 +16,7 @@ import java.util.List;
 public class User extends SugarRecord {
     private String _id;
     private String email;
+    private String password;
     private String displayName;
     private String userType;
     private String signupDate;
@@ -23,9 +24,10 @@ public class User extends SugarRecord {
     public User() {
     }
 
-    public User(String _id, String email, String displayName, String userType, String signupDate) {
+    public User(String _id, String email, String password,String displayName, String userType, String signupDate) {
         this._id = _id;
         this.email = email;
+        this.password = password;
         this.displayName = displayName;
         this.userType = userType;
         this.signupDate = signupDate;
@@ -46,6 +48,15 @@ public class User extends SugarRecord {
 
     public User setEmail(String email) {
         this.email = email;
+        return this;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public User setPassword(String password) {
+        this.password = password;
         return this;
     }
 

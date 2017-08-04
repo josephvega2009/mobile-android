@@ -104,12 +104,18 @@ public class LoginActivity extends AppCompatActivity {
                     public void onResponse(JSONObject response) {
                         if(response == null) return;
                         try {
-                            token = response.getString("token");
                             user = User.build(response.getJSONObject("user"));
-                            MuContactApp.getInstance().setCurrentToken(token);
-                            MuContactApp.getInstance().setCurrentUser(user);
-                            startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP));
-                            updateMusician();
+                            if(user.getUserType().equals("Musician")) {
+                                user.setPassword(password);
+                                token = response.getString("token");
+                                MuContactApp.getInstance().setCurrentToken(token);
+                                MuContactApp.getInstance().setCurrentUser(user);
+                                startActivity(intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP | Intent.FLAG_ACTIVITY_SINGLE_TOP));
+                                updateMusician();
+                            } else {
+                                Toast.makeText(getApplicationContext(), "You need a musician account", Toast.LENGTH_SHORT).show();
+                                loginProgressBar.setVisibility(View.INVISIBLE);
+                            }
                         } catch (JSONException e) {
                             e.printStackTrace();
                         }
