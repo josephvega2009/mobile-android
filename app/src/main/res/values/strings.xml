@@ -40,5 +40,6 @@
     <string name="title_activity_edit_publication">"Edit Publication "</string>
     <string name="title_activity_edit_user_profile">EditUserProfileActivity</string>
     <string name="title_activity_create_contract">CreateContractActivity</string>
+    <string name="contracts">Contracts</string>
 
 </resources>

@@ -8,6 +8,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.androidnetworking.widget.ANImageView;
+
 import java.util.List;
 
 import pe.com.mucontact.MuContactApp;
@@ -39,6 +41,9 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
     public void onBindViewHolder(
             PublicationsAdapter.ViewHolder holder, int position) {
 
+        holder.photoPublicationANImageView.setErrorImageResId(R.mipmap.ic_launcher);
+        holder.photoPublicationANImageView.setDefaultImageResId(R.mipmap.ic_launcher);
+        holder.photoPublicationANImageView.setImageUrl("http://imagizer.imageshack.us/v2/320x240q90/922/fShoPj.jpg");
         holder.instrumentTextView.setText(publications.get(position).getInstrument());
         holder.descriptionTextView.setText(publications.get(position).getDescription());
         holder.locationReferenceTextView.setText(publications.get(position).getContext());
@@ -68,12 +73,14 @@ public class PublicationsAdapter extends RecyclerView.Adapter<PublicationsAdapte
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
+        ANImageView photoPublicationANImageView;
         TextView instrumentTextView;
         TextView descriptionTextView;
         TextView locationReferenceTextView;
         ConstraintLayout publicationConstraintLayout;
         public ViewHolder(View itemView) {
             super(itemView);
+            photoPublicationANImageView = (ANImageView) itemView.findViewById(R.id.photoPublicationANImageView);
             instrumentTextView = (TextView) itemView.findViewById(R.id.instrumentTextView);
             descriptionTextView = (TextView) itemView.findViewById(R.id.descriptionTextView);
             locationReferenceTextView = (TextView) itemView.findViewById(R.id.locationReferenceTextView);

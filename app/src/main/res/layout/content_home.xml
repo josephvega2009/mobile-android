@@ -24,7 +24,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:text="@string/name"
         android:textStyle="bold"
-        android:textSize="32dp"
+        android:textSize="28dp"
         android:textColor="@color/colorAccent"
         android:layout_margin="8dp"/>
 

@@ -72,6 +72,10 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\982c9ccfdb8f076176327f16a1c921136c60c1ac\\output\\res\\drawable-anydpi-v21\\design_ic_visibility_off.xml"
     },
     {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_library_books_black_24dp.xml",
+        "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_library_books_black_24dp.xml"
+    },
+    {
         "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable-anydpi-v21\\ic_check_white_24dp.xml",
         "source": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\generated\\res\\pngs\\debug\\drawable-anydpi-v21\\ic_check_white_24dp.xml"
     },

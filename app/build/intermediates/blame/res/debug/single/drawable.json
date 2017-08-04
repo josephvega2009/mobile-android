@@ -24,12 +24,12 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_btn_radio_material.xml"
     },
     {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
-        "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\drawable\\abc_textfield_search_material.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\notification_bg_low.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_textfield_search_material.xml",
+        "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\drawable\\abc_textfield_search_material.xml"
     },
     {
         "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_thumb_material.xml",
@@ -40,12 +40,12 @@
         "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\drawable\\abc_switch_thumb_material.xml"
     },
     {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
-        "source": "C:\\Users\\Franklin\\.android\\build-cache\\117da7eb90c668fb997e877485d49c20cbfbd67c\\output\\res\\drawable\\design_snackbar_background.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_light.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_list_selector_background_transition_holo_light.xml"
+    },
+    {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\design_snackbar_background.xml",
+        "source": "C:\\Users\\Franklin\\.android\\build-cache\\117da7eb90c668fb997e877485d49c20cbfbd67c\\output\\res\\drawable\\design_snackbar_background.xml"
     },
     {
         "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_ab_back_material.xml",
@@ -64,12 +64,12 @@
         "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\drawable\\notification_bg_low.xml"
     },
     {
-        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
-        "source": "C:\\Users\\INTEL\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml",
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_ic_arrow_drop_right_black_24dp.xml"
+    },
+    {
+        "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_background_transition_holo_dark.xml",
+        "source": "C:\\Users\\INTEL\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_list_selector_background_transition_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_seekbar_tick_mark_material.xml",
@@ -84,12 +84,12 @@
         "source": "C:\\Users\\romer\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_ratingbar_indicator_material.xml"
     },
     {
-        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
-        "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
-    },
-    {
         "merged": "C:\\Users\\INTEL\\Documents\\GitHub\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_dialog_material_background.xml",
         "source": "C:\\Users\\INTEL\\.android\\build-cache\\e9002ece7d08d241877b7c01a83f4e6cb11b34eb\\output\\res\\drawable\\abc_dialog_material_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Franklin\\Desktop\\android\\mobile-android\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_list_selector_holo_dark.xml",
+        "source": "C:\\Users\\Franklin\\.android\\build-cache\\4a3f895117e338e4fba425ba5c242e50b73987e2\\output\\res\\drawable\\abc_list_selector_holo_dark.xml"
     },
     {
         "merged": "C:\\Users\\romer\\AndroidStudioProjects\\MuContact\\app\\build\\intermediates\\res\\merged\\debug\\drawable\\abc_btn_borderless_material.xml",

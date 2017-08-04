@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+import com.androidnetworking.widget.ANImageView;
+
 import pe.com.mucontact.MuContactApp;
 import pe.com.mucontact.R;
 import pe.com.mucontact.models.Craftman;
@@ -17,6 +19,7 @@ import pe.com.mucontact.models.Craftman;
  */
 
 public class AboutCraftmanActivity extends AppCompatActivity {
+    private ANImageView photCraftmanANImageView;
     private TextView nameTextView;
     private TextView descriptionTextView;
     private TextView phoneTextView;
@@ -31,13 +34,16 @@ public class AboutCraftmanActivity extends AppCompatActivity {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-
+        photCraftmanANImageView = (ANImageView) findViewById(R.id.photoCraftmanANImageView);
         nameTextView = (TextView) findViewById(R.id.nameTextView);
         descriptionTextView = (TextView) findViewById(R.id.descriptionTextView);
         phoneTextView = (TextView) findViewById(R.id.phoneTextView);
         levelTextView = (TextView) findViewById(R.id.levelTextView);
         craftman = MuContactApp.getInstance().getCurrentCraftman();
 
+        photCraftmanANImageView.setErrorImageResId(R.mipmap.ic_launcher);
+        photCraftmanANImageView.setDefaultImageResId(R.mipmap.ic_launcher);
+        //photCraftmanANImageView.setImageUrl();
         nameTextView.setText(craftman.getUser().getDisplayName());
         descriptionTextView.setText(craftman.getDescription());
         phoneTextView.setText(craftman.getPhone());
