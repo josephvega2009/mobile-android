@@ -7,10 +7,9 @@
         android:icon="@drawable/ic_person_white_24dp"
         android:title="@string/action_profile"
         app:showAsAction="ifRoom"/>
-
     <item
-        android:id="@+id/action_settings"
-        android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never"/>
+        android:id="@+id/action_rewards"
+        android:icon="@drawable/ic_card_giftcard_white_24dp"
+        android:title="@string/title_rewards"
+        app:showAsAction="ifRoom"/>
 </menu>

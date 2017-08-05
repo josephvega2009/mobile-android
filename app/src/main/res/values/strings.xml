@@ -37,9 +37,10 @@
     <string name="action_edit">Edit</string>
     <string name="action_delete">Delete</string>
     <string name="title_activity_about_user">About Me</string>
-    <string name="title_activity_edit_publication">"Edit Publication "</string>
-    <string name="title_activity_edit_user_profile">EditUserProfileActivity</string>
-    <string name="title_activity_create_contract">CreateContractActivity</string>
-    <string name="contracts">Contracts</string>
+    <string name="title_activity_edit_publication">"Edit the publication "</string>
+    <string name="title_activity_edit_user_profile">Edit my info</string>
+    <string name="title_activity_create_contract">Send a Order</string>
+    <string name="contracts">My Contracts</string>
+    <string name="title_activity_rewards">RewardsActivity</string>
 
 </resources>

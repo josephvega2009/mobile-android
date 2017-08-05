@@ -13,7 +13,6 @@ import android.view.MenuItem;
 import pe.com.mucontact.R;
 import pe.com.mucontact.fragments.HomeFragment;
 import pe.com.mucontact.fragments.PublicationFragment;
-import pe.com.mucontact.fragments.RewardFragment;
 import pe.com.mucontact.fragments.ContractFragment;
 
 public class MainActivity extends AppCompatActivity {
@@ -37,7 +36,6 @@ public class MainActivity extends AppCompatActivity {
         switch (id) {
             case R.id.navigation_home: return new HomeFragment();
             case R.id.navigation_publications: return new PublicationFragment();
-            case R.id.navigation_rewards: return new RewardFragment();
             case R.id.navigation_contracts: return new ContractFragment();
         }
         return null;
@@ -70,7 +68,9 @@ public class MainActivity extends AppCompatActivity {
                 Intent intent = new Intent (getApplicationContext(), AboutUserActivity.class);
                 startActivity(intent);
                 return true;
-            case R.id.action_settings:
+            case R.id.action_rewards:
+                Intent intent1 = new Intent(getApplicationContext(), RewardsActivity.class);
+                startActivity(intent1);
                 return true;
             default:
                 return super.onContextItemSelected(item);

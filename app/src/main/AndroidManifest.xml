@@ -99,6 +99,15 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="pe.com.mucontact.activities.AboutCraftmanActivity" />
         </activity>
+        <activity
+            android:name=".activities.RewardsActivity"
+            android:label="@string/title_activity_rewards"
+            android:parentActivityName=".activities.MainActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="pe.com.mucontact.activities.MainActivity" />
+        </activity>
     </application>
 
 </manifest>
